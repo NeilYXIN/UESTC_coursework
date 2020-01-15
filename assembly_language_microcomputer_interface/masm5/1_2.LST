@@ -1,0 +1,69 @@
+Microsoft (R) Macro Assembler Version 5.00                  6/16/17 10:10:56
+                                                             Page     1-1
+
+
+ 0000				data segment 
+ 0000  11 05 28 00 43 0C 22		ary db 17,5,40,0,67,12,34,78,32,10 
+       4E 20 0A			
+ 000A  ??				max db ? 
+ 000B				data ends 
+ 0000				stack1 segment para stack 
+ 0000  0020[				dw 20h dup(0) 
+	   0000			
+			 ]	
+				
+ 0040				stack1 ends 
+ 0000				code segment 
+					assume cs:code,ds:data,ss:stack1 
+ 0000				begin: 
+ 0000  B8 ---- R			mov ax,data 
+ 0003  8E D8				mov ds,ax 
+ 0005  BE 0000 R			mov si,offset ary 
+ 0008  B9 0009				mov cx,9 
+ 000B  8A 04				mov al,[si] 
+ 000D  46			lop:	inc si 
+ 000E  3A 04				cmp al,[si] 
+ 0010  73 02				jae biger 
+ 0012  8A 04				mov al,[si] 
+ 0014  E2 F7			biger:	loop lop 
+ 0016  A2 000A R			mov max,al 
+ 0019  B4 4C				mov ah,4ch 
+ 001B  CD 21				int 21h 
+ 001D				code ends 
+					end begin 
+Microsoft (R) Macro Assembler Version 5.00                  6/16/17 10:10:56
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+CODE . . . . . . . . . . . . . .  	001D	PARA	NONE	
+DATA . . . . . . . . . . . . . .  	000B	PARA	NONE	
+STACK1 . . . . . . . . . . . . .  	0040	PARA	STACK	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+ARY  . . . . . . . . . . . . . .  	L BYTE	0000	DATA
+
+BEGIN  . . . . . . . . . . . . .  	L NEAR	0000	CODE
+BIGER  . . . . . . . . . . . . .  	L NEAR	0014	CODE
+
+LOP  . . . . . . . . . . . . . .  	L NEAR	000D	CODE
+
+MAX  . . . . . . . . . . . . . .  	L BYTE	000A	DATA
+
+@FILENAME  . . . . . . . . . . .  	TEXT  1_2		
+
+
+     25 Source  Lines
+     25 Total   Lines
+     10 Symbols
+
+  51146 + 465398 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

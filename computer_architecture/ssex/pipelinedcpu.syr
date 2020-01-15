@@ -1,0 +1,1713 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: pipelinedcpu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pipelinedcpu.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pipelinedcpu"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : pipelinedcpu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\g_p.v" into library work
+Parsing module <g_p>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\add.v" into library work
+Parsing module <add>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\cla_2.v" into library work
+Parsing module <cla_2>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\cla_4.v" into library work
+Parsing module <cla_4>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\cla_8.v" into library work
+Parsing module <cla_8>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\cla_16.v" into library work
+Parsing module <cla_16>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\cla_32.v" into library work
+Parsing module <cla_32>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\mux2x32.v" into library work
+Parsing module <mux2x32>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\cla32.v" into library work
+Parsing module <cla32>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\shift.v" into library work
+Parsing module <shift>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\mux6x32.v" into library work
+Parsing module <mux6x32>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\mul_signed.v" into library work
+Parsing module <mul_signed>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\addsub32.v" into library work
+Parsing module <addsub32>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\regfile.v" into library work
+Parsing module <regfile>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipeidcu.v" into library work
+Parsing module <pipeidcu>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\mux4x32.v" into library work
+Parsing module <mux4x32>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\mux2x5.v" into library work
+Parsing module <mux2x5>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\IP_ROM.v" into library work
+Parsing module <IP_ROM>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\dff32.v" into library work
+Parsing module <dff32>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipepc.v" into library work
+Parsing module <pipepc>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipemwreg.v" into library work
+Parsing module <pipemwreg>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipeir.v" into library work
+Parsing module <pipeir>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipeif.v" into library work
+Parsing module <pipeif>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipeid.v" into library work
+Parsing module <pipeid>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipeexe.v" into library work
+Parsing module <pipeexe>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipeemreg.v" into library work
+Parsing module <pipeemreg>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipedereg.v" into library work
+Parsing module <pipedereg>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\IP_RAM.v" into library work
+Parsing module <IP_RAM>.
+Analyzing Verilog file "C:\Users\yx654\Desktop\ssex\pipelinedcpu.v" into library work
+Parsing module <pipelinedcpu>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <pipelinedcpu>.
+
+Elaborating module <pipepc>.
+
+Elaborating module <dff32>.
+WARNING:HDLCompiler:1016 - "C:\Users\yx654\Desktop\ssex\pipeif.v" Line 31: Port co is not connected to this instance
+
+Elaborating module <pipeif>.
+
+Elaborating module <mux4x32>.
+
+Elaborating module <cla32>.
+
+Elaborating module <cla_32>.
+
+Elaborating module <cla_16>.
+
+Elaborating module <cla_8>.
+
+Elaborating module <cla_4>.
+
+Elaborating module <cla_2>.
+
+Elaborating module <add>.
+
+Elaborating module <g_p>.
+
+Elaborating module <IP_ROM>.
+WARNING:HDLCompiler:634 - "C:\Users\yx654\Desktop\ssex\IP_ROM.v" Line 26: Net <rom[19][31]> does not have a driver.
+
+Elaborating module <pipeir>.
+WARNING:HDLCompiler:1016 - "C:\Users\yx654\Desktop\ssex\pipeid.v" Line 75: Port co is not connected to this instance
+
+Elaborating module <pipeid>.
+
+Elaborating module <pipeidcu>.
+
+Elaborating module <regfile>.
+
+Elaborating module <mux2x5>.
+WARNING:HDLCompiler:1127 - "C:\Users\yx654\Desktop\ssex\pipelinedcpu.v" Line 48: Assignment to daluimm ignored, since the identifier is never used
+
+Elaborating module <pipedereg>.
+WARNING:HDLCompiler:1016 - "C:\Users\yx654\Desktop\ssex\pipeexe.v" Line 37: Port co is not connected to this instance
+
+Elaborating module <pipeexe>.
+
+Elaborating module <mux2x32>.
+
+Elaborating module <alu>.
+WARNING:HDLCompiler:1016 - "C:\Users\yx654\Desktop\ssex\addsub32.v" Line 26: Port co is not connected to this instance
+
+Elaborating module <addsub32>.
+
+Elaborating module <mul_signed>.
+
+Elaborating module <shift>.
+
+Elaborating module <mux6x32>.
+
+Elaborating module <pipeemreg>.
+
+Elaborating module <IP_RAM>.
+
+Elaborating module <pipemwreg>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pipelinedcpu>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipelinedcpu.v".
+INFO:Xst:3210 - "C:\Users\yx654\Desktop\ssex\pipelinedcpu.v" line 45: Output port <aluimm> of the instance <id_stage> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\yx654\Desktop\ssex\pipelinedcpu.v" line 45: Output port <shift> of the instance <id_stage> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <pipelinedcpu> synthesized.
+
+Synthesizing Unit <pipepc>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipepc.v".
+    Summary:
+	no macro.
+Unit <pipepc> synthesized.
+
+Synthesizing Unit <dff32>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\dff32.v".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <dff32> synthesized.
+
+Synthesizing Unit <pipeif>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipeif.v".
+INFO:Xst:3210 - "C:\Users\yx654\Desktop\ssex\pipeif.v" line 31: Output port <co> of the instance <pc_plus4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <pipeif> synthesized.
+
+Synthesizing Unit <mux4x32>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\mux4x32.v".
+    Found 32-bit 4-to-1 multiplexer for signal <y> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux4x32> synthesized.
+
+Synthesizing Unit <cla32>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\cla32.v".
+    Summary:
+	no macro.
+Unit <cla32> synthesized.
+
+Synthesizing Unit <cla_32>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\cla_32.v".
+    Summary:
+	no macro.
+Unit <cla_32> synthesized.
+
+Synthesizing Unit <cla_16>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\cla_16.v".
+    Summary:
+	no macro.
+Unit <cla_16> synthesized.
+
+Synthesizing Unit <cla_8>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\cla_8.v".
+    Summary:
+	no macro.
+Unit <cla_8> synthesized.
+
+Synthesizing Unit <cla_4>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\cla_4.v".
+    Summary:
+	no macro.
+Unit <cla_4> synthesized.
+
+Synthesizing Unit <cla_2>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\cla_2.v".
+    Summary:
+	no macro.
+Unit <cla_2> synthesized.
+
+Synthesizing Unit <add>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\add.v".
+    Summary:
+Unit <add> synthesized.
+
+Synthesizing Unit <g_p>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\g_p.v".
+    Summary:
+	no macro.
+Unit <g_p> synthesized.
+
+Synthesizing Unit <IP_ROM>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\IP_ROM.v".
+WARNING:Xst:647 - Input <a<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <a<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <rom<19>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 64x32-bit Read Only RAM for signal <inst>
+    Summary:
+	inferred   1 RAM(s).
+Unit <IP_ROM> synthesized.
+
+Synthesizing Unit <pipeir>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipeir.v".
+    Summary:
+	no macro.
+Unit <pipeir> synthesized.
+
+Synthesizing Unit <pipeid>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipeid.v".
+INFO:Xst:3210 - "C:\Users\yx654\Desktop\ssex\pipeid.v" line 75: Output port <co> of the instance <br_addr> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <pipeid> synthesized.
+
+Synthesizing Unit <pipeidcu>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipeidcu.v".
+WARNING:Xst:647 - Input <func<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit comparator equal for signal <rs[4]_rt[4]_equal_47_o> created at line 106
+    Found 5-bit comparator equal for signal <rs[4]_ern[4]_equal_49_o> created at line 110
+    Found 5-bit comparator equal for signal <rs[4]_mrn[4]_equal_50_o> created at line 111
+    Found 5-bit comparator equal for signal <rt[4]_ern[4]_equal_51_o> created at line 112
+    Found 5-bit comparator equal for signal <rt[4]_mrn[4]_equal_52_o> created at line 113
+    Summary:
+	inferred   5 Comparator(s).
+Unit <pipeidcu> synthesized.
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\regfile.v".
+    Found 992-bit register for signal <n0050[991:0]>.
+    Found 32-bit 31-to-1 multiplexer for signal <rna[4]_register[31][31]_wide_mux_1_OUT> created at line 31.
+    Found 32-bit 31-to-1 multiplexer for signal <rnb[4]_register[31][31]_wide_mux_4_OUT> created at line 32.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <regfile> synthesized.
+
+Synthesizing Unit <mux2x5>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\mux2x5.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2x5> synthesized.
+
+Synthesizing Unit <pipedereg>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipedereg.v".
+    Found 1-bit register for signal <em2reg>.
+    Found 1-bit register for signal <ewmem>.
+    Found 1-bit register for signal <ejal>.
+    Found 1-bit register for signal <e_jump>.
+    Found 1-bit register for signal <e_bmp>.
+    Found 1-bit register for signal <ewreg>.
+    Found 5-bit register for signal <ealuc>.
+    Found 5-bit register for signal <ern>.
+    Found 2-bit register for signal <eb_depen>.
+    Found 2-bit register for signal <ea_depen>.
+    Found 32-bit register for signal <ea>.
+    Found 32-bit register for signal <eb>.
+    Found 32-bit register for signal <eimm>.
+    Found 32-bit register for signal <epc4>.
+    Summary:
+	inferred 148 D-type flip-flop(s).
+Unit <pipedereg> synthesized.
+
+Synthesizing Unit <pipeexe>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipeexe.v".
+INFO:Xst:3210 - "C:\Users\yx654\Desktop\ssex\pipeexe.v" line 37: Output port <co> of the instance <ret_addr> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <pipeexe> synthesized.
+
+Synthesizing Unit <mux2x32>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\mux2x32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2x32> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\alu.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <addsub32>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\addsub32.v".
+INFO:Xst:3210 - "C:\Users\yx654\Desktop\ssex\addsub32.v" line 26: Output port <co> of the instance <as32> is unconnected or connected to loadless signal.
+    Summary:
+Unit <addsub32> synthesized.
+
+Synthesizing Unit <mul_signed>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\mul_signed.v".
+    Found 18-bit adder for signal <n0110[17:0]> created at line 41.
+    Found 20-bit adder for signal <n0113[19:0]> created at line 43.
+    Found 21-bit adder for signal <n0116[20:0]> created at line 41.
+    Found 22-bit adder for signal <n0119[21:0]> created at line 45.
+    Found 24-bit adder for signal <n0122[23:0]> created at line 47.
+    Found 25-bit adder for signal <n0125[24:0]> created at line 45.
+    Found 26-bit adder for signal <n0128[25:0]> created at line 41.
+    Found 26-bit adder for signal <n0131[25:0]> created at line 49.
+    Found 28-bit adder for signal <n0134[27:0]> created at line 51.
+    Found 29-bit adder for signal <n0137[28:0]> created at line 49.
+    Found 30-bit adder for signal <n0140[29:0]> created at line 53.
+    Found 32-bit adder for signal <n0145> created at line 55.
+    Found 32-bit adder for signal <n0148> created at line 53.
+    Found 32-bit adder for signal <n0151> created at line 49.
+    Found 32-bit adder for signal <z> created at line 41.
+    Summary:
+	inferred  15 Adder/Subtractor(s).
+	inferred  16 Multiplexer(s).
+Unit <mul_signed> synthesized.
+
+Synthesizing Unit <shift>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\shift.v".
+        z = 16'b0000000000000000
+    Summary:
+	no macro.
+Unit <shift> synthesized.
+
+Synthesizing Unit <mux6x32>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\mux6x32.v".
+    Found 32-bit 7-to-1 multiplexer for signal <y> created at line 29.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux6x32> synthesized.
+
+Synthesizing Unit <pipeemreg>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipeemreg.v".
+    Found 1-bit register for signal <mm2reg>.
+    Found 1-bit register for signal <mwmem>.
+    Found 1-bit register for signal <mwreg>.
+    Found 32-bit register for signal <malu>.
+    Found 32-bit register for signal <mb>.
+    Found 5-bit register for signal <mrn>.
+    Summary:
+	inferred  72 D-type flip-flop(s).
+Unit <pipeemreg> synthesized.
+
+Synthesizing Unit <IP_RAM>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\IP_RAM.v".
+WARNING:Xst:647 - Input <addr<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32x32-bit single-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <IP_RAM> synthesized.
+
+Synthesizing Unit <pipemwreg>.
+    Related source file is "C:\Users\yx654\Desktop\ssex\pipemwreg.v".
+    Found 1-bit register for signal <wm2reg>.
+    Found 1-bit register for signal <wwreg>.
+    Found 32-bit register for signal <wmo>.
+    Found 32-bit register for signal <walu>.
+    Found 5-bit register for signal <wrn>.
+    Summary:
+	inferred  71 D-type flip-flop(s).
+Unit <pipemwreg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit single-port RAM                             : 1
+ 64x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 15
+ 18-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 2
+ 28-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 32-bit adder                                          : 4
+# Registers                                            : 29
+ 1-bit register                                        : 11
+ 2-bit register                                        : 2
+ 32-bit register                                       : 11
+ 5-bit register                                        : 4
+ 992-bit register                                      : 1
+# Comparators                                          : 5
+ 5-bit comparator equal                                : 5
+# Multiplexers                                         : 69
+ 16-bit 2-to-1 multiplexer                             : 16
+ 32-bit 2-to-1 multiplexer                             : 46
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 7-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 258
+ 1-bit xor2                                            : 256
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <IP_RAM>.
+INFO:Xst:3217 - HDL ADVISOR - Register <wmo> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_ram> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <datain>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <IP_RAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <IP_ROM>.
+INFO:Xst:3217 - HDL ADVISOR - Register <q> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_inst> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <inst>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_inst> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <IP_ROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mul_signed>.
+	The following adders/subtractors are grouped into adder tree <Madd_z1> :
+ 	<Madd_n0110[17:0]> in block <mul_signed>, 	<Madd_n0113[19:0]> in block <mul_signed>, 	<Madd_n0119[21:0]> in block <mul_signed>, 	<Madd_n0122[23:0]> in block <mul_signed>, 	<Madd_n0131[25:0]> in block <mul_signed>, 	<Madd_n0134[27:0]> in block <mul_signed>, 	<Madd_n0140[29:0]> in block <mul_signed>, 	<Madd_n0145> in block <mul_signed>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01511> :
+ 	<Madd_n0137[28:0]> in block <mul_signed>, 	<Madd_n0148> in block <mul_signed>.
+	The following adders/subtractors are grouped into adder tree <Madd_n0128[25:0]1> :
+ 	<Madd_n0116[20:0]> in block <mul_signed>, 	<Madd_n0125[24:0]> in block <mul_signed>.
+Unit <mul_signed> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit single-port distributed RAM                 : 1
+ 64x32-bit single-port distributed Read Only RAM       : 1
+# Adder Trees                                          : 1
+ 32-bit / 16-inputs adder tree                         : 1
+# Registers                                            : 1379
+ Flip-Flops                                            : 1379
+# Comparators                                          : 5
+ 5-bit comparator equal                                : 5
+# Multiplexers                                         : 69
+ 16-bit 2-to-1 multiplexer                             : 16
+ 32-bit 2-to-1 multiplexer                             : 46
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 7-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 258
+ 1-bit xor2                                            : 256
+ 32-bit xor2                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <eimm_16> in Unit <pipedereg> is equivalent to the following 15 FFs/Latches, which will be removed : <eimm_17> <eimm_18> <eimm_19> <eimm_20> <eimm_21> <eimm_22> <eimm_23> <eimm_24> <eimm_25> <eimm_26> <eimm_27> <eimm_28> <eimm_29> <eimm_30> <eimm_31> 
+
+Optimizing unit <pipelinedcpu> ...
+
+Optimizing unit <dff32> ...
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <pipeidcu> ...
+
+Optimizing unit <pipedereg> ...
+
+Optimizing unit <pipeemreg> ...
+
+Optimizing unit <pipemwreg> ...
+
+Optimizing unit <pipeexe> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <shift> ...
+
+Optimizing unit <mul_signed> ...
+WARNING:Xst:1710 - FF/Latch <de_reg/eimm_16> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/ern_4> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_3> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_4> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_8> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_9> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_14> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_15> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_16> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_17> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_18> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_19> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_21> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_22> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_23> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_24> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_25> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/instruction/q_31> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_4> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_5> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_6> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_7> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_8> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_9> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_11> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_12> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_13> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_14> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/eimm_15> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <prog_cnt/program_counter/q_1> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <prog_cnt/program_counter/q_0> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/pc_plus4/q_1> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <inst_reg/pc_plus4/q_0> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/epc4_1> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <de_reg/epc4_0> (without init value) has a constant value of 0 in block <pipelinedcpu>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pipelinedcpu, actual ratio is 5.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_767> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_766> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_765> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_764> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_763> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_762> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_761> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_760> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_759> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_758> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_757> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_756> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_755> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_754> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_753> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_752> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_751> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_750> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_749> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_748> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_747> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_746> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_745> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_744> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_743> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_742> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_741> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_740> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_739> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_738> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_737> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_736> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_735> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_734> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_733> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_732> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_731> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_730> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_729> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_728> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_727> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_726> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_725> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_724> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_723> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_722> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_721> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_720> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_719> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_718> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_717> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_716> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_715> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_714> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_713> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_712> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_711> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_710> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_709> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_708> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_707> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_706> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_705> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_704> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_703> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_702> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_701> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_700> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_699> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_698> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_697> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_696> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_695> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_694> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_693> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_692> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_691> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_690> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_689> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_688> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_687> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_686> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_685> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_684> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_683> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_682> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_681> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_680> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_679> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_678> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_677> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_676> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_675> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_674> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_673> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_672> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_671> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_670> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_669> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_668> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_667> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_666> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_665> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_664> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_663> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_662> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_661> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_660> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_659> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_658> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_657> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_656> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_655> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_654> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_653> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_652> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_651> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_650> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_649> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_648> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_647> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_646> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_645> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_644> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_643> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_642> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_641> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_640> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_639> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_638> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_637> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_636> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_635> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_634> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_633> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_632> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_631> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_630> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_629> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_628> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_627> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_626> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_625> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_624> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_623> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_622> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_621> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_620> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_619> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_618> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_617> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_616> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_615> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_614> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_613> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_612> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_611> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_610> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_609> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_608> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_607> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_606> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_605> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_604> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_603> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_602> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_601> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_600> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_599> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_598> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_597> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_596> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_595> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_594> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_593> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_592> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_591> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_590> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_589> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_588> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_587> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_586> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_585> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_584> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_583> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_582> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_581> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_580> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_579> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_578> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_577> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_576> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_575> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_574> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_573> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_572> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_571> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_570> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_569> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_568> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_567> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_566> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_565> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_564> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_563> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_562> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_561> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_560> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_559> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_558> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_557> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_556> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_555> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_554> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_553> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_552> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_551> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_550> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_549> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_548> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_547> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_546> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_545> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_544> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_543> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_542> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_541> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_540> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_539> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_538> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_537> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_536> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_535> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_534> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_533> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_532> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_531> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_530> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_529> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_528> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_527> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_526> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_525> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_524> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_523> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_522> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_521> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_520> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_519> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_518> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_517> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_516> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_515> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_514> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_513> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_512> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_511> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_510> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_509> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_508> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_507> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_506> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_505> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_504> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_503> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_502> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_501> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_500> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_499> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_498> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_497> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_496> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_495> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_494> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_493> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_492> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_491> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_490> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_489> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_488> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_487> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_486> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_485> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_484> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_483> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_482> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_481> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_480> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_479> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_478> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_477> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_476> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_475> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_474> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_473> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_472> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_471> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_470> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_469> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_468> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_467> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_466> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_465> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_464> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_463> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_462> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_461> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_460> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_459> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_458> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_457> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_456> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_455> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_454> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_453> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_452> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_451> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_450> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_449> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_448> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_447> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_446> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_445> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_444> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_443> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_442> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_441> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_440> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_439> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_438> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_437> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_436> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_435> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_434> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_433> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_432> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_431> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_430> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_429> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_428> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_427> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_426> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_425> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_424> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_423> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_422> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_421> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_420> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_419> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_418> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_417> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_416> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_415> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_414> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_413> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_412> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_411> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_410> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_409> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_408> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_407> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_406> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_405> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_404> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_403> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_402> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_401> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_400> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_399> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_398> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_397> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_396> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_395> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_394> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_393> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_392> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_391> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_390> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_389> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_388> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_387> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_386> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_385> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_384> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_383> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_382> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_381> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_380> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_379> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_378> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_377> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_376> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_375> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_374> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_373> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_372> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_371> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_370> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_369> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_368> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_367> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_366> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_365> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_364> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_363> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_362> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_361> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_360> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_359> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_358> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_357> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_356> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_355> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_354> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_353> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_352> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_351> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_350> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_349> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_348> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_347> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_346> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_345> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_344> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_343> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_342> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_341> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_340> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_339> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_338> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_337> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_336> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_335> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_334> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_333> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_332> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_331> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_330> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_329> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_328> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_327> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_326> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_325> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_324> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_323> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_322> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_321> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_320> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_319> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_318> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_317> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_316> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_315> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_314> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_313> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_312> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_311> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_310> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_309> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_308> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_307> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_306> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_305> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_304> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_303> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_302> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_301> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_300> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_299> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_298> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_297> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_296> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_295> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_294> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_293> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_292> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_291> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_290> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_289> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_288> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_287> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_286> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_285> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_284> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_283> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_282> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_281> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_280> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_279> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_278> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_277> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_276> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_275> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_274> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_273> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_272> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_271> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_270> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_269> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_268> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_267> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_266> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_265> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_264> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_263> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_262> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_261> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_260> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_259> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_258> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_257> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_256> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_255> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_254> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_253> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_252> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_251> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_250> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_249> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_248> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_247> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_246> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_245> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_244> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_243> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_242> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_241> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_240> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_239> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_238> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_237> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_236> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_235> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_234> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_233> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_232> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_231> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_230> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_229> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_228> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_227> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_226> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_225> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_224> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_223> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_222> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_221> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_220> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_219> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_218> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_217> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_216> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_215> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_214> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_213> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_212> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_211> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_210> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_209> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_208> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_207> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_206> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_205> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_204> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_203> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_202> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_201> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_200> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_199> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_198> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_197> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_196> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_195> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_194> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_193> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_192> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_191> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_190> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_189> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_188> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_187> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_186> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_185> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_184> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_183> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_182> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_181> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_180> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_179> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_178> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_177> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_176> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_175> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_174> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_173> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_172> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_171> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_170> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_169> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_168> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_167> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_166> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_165> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_164> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_163> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_162> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_161> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_160> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_159> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_158> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_157> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_156> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_155> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_154> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_153> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_152> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_151> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_150> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_149> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_148> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_147> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_146> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_145> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_144> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_143> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_142> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_141> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_140> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_139> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_138> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_137> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_136> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_135> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_134> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_133> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_132> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_131> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_130> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_129> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_128> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_127> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_126> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_125> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_124> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_123> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_122> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_121> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_120> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_119> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_118> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_117> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_116> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_115> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_114> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_113> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_112> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_111> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_110> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_109> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_108> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_107> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_106> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_105> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_104> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_103> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_102> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_101> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_100> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_99> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_98> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_97> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_96> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_95> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_94> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_93> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_92> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_91> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_90> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_89> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_88> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_87> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_86> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_85> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_84> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_83> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_82> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_81> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_80> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_79> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_78> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_77> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_76> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_75> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_74> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_73> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_72> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_71> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_70> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_69> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_68> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_67> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_66> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_65> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_64> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_63> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_62> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_61> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_60> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_59> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_58> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_57> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_56> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_55> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_54> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_53> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_52> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_51> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_50> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_49> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_48> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_47> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_46> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_45> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_44> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_43> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_42> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_41> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_40> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_39> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_38> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_37> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_36> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_35> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_34> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_33> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_32> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_31> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_30> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_29> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_28> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_27> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_26> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_25> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_24> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_23> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_22> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_21> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_20> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_19> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_18> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_17> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_16> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_15> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_14> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_13> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_12> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_11> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_10> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_9> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_8> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_7> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_6> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_5> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_4> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_3> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_2> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_1> of sequential type is unconnected in block <pipelinedcpu>.
+WARNING:Xst:2677 - Node <id_stage/rf/register_31_0> of sequential type is unconnected in block <pipelinedcpu>.
+FlipFlop de_reg/ea_depen_0 has been replicated 2 time(s)
+FlipFlop de_reg/ea_depen_1 has been replicated 3 time(s)
+FlipFlop de_reg/eb_depen_0 has been replicated 2 time(s)
+FlipFlop de_reg/eb_depen_1 has been replicated 2 time(s)
+FlipFlop em_reg/malu_0 has been replicated 1 time(s)
+FlipFlop mw_reg/wm2reg has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 575
+ Flip-Flops                                            : 575
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pipelinedcpu.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2041
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 14
+#      LUT2                        : 51
+#      LUT3                        : 174
+#      LUT4                        : 194
+#      LUT5                        : 524
+#      LUT6                        : 649
+#      MUXCY                       : 195
+#      MUXF7                       : 26
+#      VCC                         : 1
+#      XORCY                       : 209
+# FlipFlops/Latches                : 575
+#      FDC                         : 275
+#      FDCE                        : 293
+#      FDPE                        : 7
+# RAMS                             : 32
+#      RAM32X1S                    : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 161
+#      IBUF                        : 1
+#      OBUF                        : 160
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             575  out of  126800     0%  
+ Number of Slice LUTs:                 1641  out of  63400     2%  
+    Number used as Logic:              1609  out of  63400     2%  
+    Number used as Memory:               32  out of  19000     0%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1799
+   Number with an unused Flip Flop:    1224  out of   1799    68%  
+   Number with an unused LUT:           158  out of   1799     8%  
+   Number of fully used LUT-FF pairs:   417  out of   1799    23%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                         162
+ Number of bonded IOBs:                 162  out of    210    77%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 607   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.637ns (Maximum Frequency: 103.767MHz)
+   Minimum input arrival time before clock: 1.202ns
+   Maximum output required time after clock: 8.784ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 9.637ns (frequency: 103.767MHz)
+  Total number of paths / destination ports: 1369327520 / 1099
+-------------------------------------------------------------------------
+Delay:               9.637ns (Levels of Logic = 32)
+  Source:            mw_reg/wmo_11 (FF)
+  Destination:       prog_cnt/program_counter/q_31 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: mw_reg/wmo_11 to prog_cnt/program_counter/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.361   0.543  mw_reg/wmo_11 (mw_reg/wmo_11)
+     LUT3:I0->O            7   0.097   0.323  wb_stage/Mmux_y31 (wdi<11>)
+     LUT5:I4->O           26   0.097   0.617  exe_stage/alu_inb/Mmux_y31 (exe_stage/alub<11>)
+     LUT4:I1->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_lut<3> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_lut<3>)
+     MUXCY:S->O            1   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<3> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<4> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<5> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<6> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<7> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<8> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<9> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<10> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<11> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<12> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<13> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<14> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<14>)
+     XORCY:CI->O           2   0.370   0.299  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_xor<15> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd_238)
+     LUT3:I2->O            1   0.097   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd915 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd915)
+     LUT3:I2->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_lut<0>24 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_lut<0>24)
+     MUXCY:S->O            1   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>_23 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>24)
+     XORCY:CI->O           1   0.370   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_xor<0>_24 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd_259)
+     LUT2:I1->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_lut<25> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_lut<25>)
+     MUXCY:S->O            1   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_cy<25> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_cy<25>)
+     XORCY:CI->O           2   0.370   0.299  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_xor<26> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd_2613)
+     LUT3:I2->O            1   0.097   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd1426 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd1426)
+     LUT4:I3->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_lut<0>27 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_lut<0>27)
+     MUXCY:S->O            1   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_cy<0>_26 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_cy<0>27)
+     XORCY:CI->O           1   0.370   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_xor<0>_27 (exe_stage/al_unit/d_mul<28>)
+     LUT6:I5->O            2   0.097   0.283  exe_stage/al_unit/select/Mmux_y422 (exe_stage/al_unit/select/Mmux_y421)
+     MUXF7:S->O            1   0.335   0.295  exe_stage/al_unit/select/Mmux_y425_SW0 (N129)
+     LUT6:I5->O            1   0.097   0.379  exe_stage/al_unit/z7_SW1 (N106)
+     LUT6:I4->O           30   0.097   0.402  id_stage/cu/pcsource<0> (pcsource<0>)
+     LUT6:I5->O            1   0.097   0.000  if_stage/next_pc/Mmux_y241 (npc<30>)
+     FDCE:D                    0.008          prog_cnt/program_counter/q_30
+    ----------------------------------------
+    Total                      9.637ns (5.013ns logic, 4.624ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 575 / 575
+-------------------------------------------------------------------------
+Offset:              1.202ns (Levels of Logic = 2)
+  Source:            resetn (PAD)
+  Destination:       inst_reg/instruction/q_30 (FF)
+  Destination Clock: clock rising
+
+  Data Path: resetn to inst_reg/instruction/q_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  resetn_IBUF (resetn_IBUF)
+     INV:I->O            575   0.113   0.460  inst_reg/instruction/clrn_inv1_INV_0 (de_reg/clrn_inv)
+     FDC:CLR                   0.349          de_reg/ealuc_0
+    ----------------------------------------
+    Total                      1.202ns (0.463ns logic, 0.739ns route)
+                                       (38.5% logic, 61.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 43340690 / 142
+-------------------------------------------------------------------------
+Offset:              8.784ns (Levels of Logic = 34)
+  Source:            mw_reg/wmo_11 (FF)
+  Destination:       ealu<31> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: mw_reg/wmo_11 to ealu<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.361   0.544  mw_reg/wmo_11 (mw_reg/wmo_11)
+     LUT3:I0->O            7   0.097   0.323  wb_stage/Mmux_y31 (wdi<11>)
+     LUT5:I4->O           26   0.097   0.617  exe_stage/alu_inb/Mmux_y31 (exe_stage/alub<11>)
+     LUT4:I1->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_lut<3> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_lut<3>)
+     MUXCY:S->O            1   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<3> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<4> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<5> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<6> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<7> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<8> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<9> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<10> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<11> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<12> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<13> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<14> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<15> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_cy<15>)
+     XORCY:CI->O           2   0.370   0.299  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd8_xor<16> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd_248)
+     LUT2:I1->O            1   0.097   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd916 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd916)
+     LUT2:I1->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_lut<0>25 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_lut<0>25)
+     MUXCY:S->O            1   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>_24 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>25)
+     MUXCY:CI->O           1   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>_25 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>26)
+     MUXCY:CI->O           0   0.023   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>_26 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_cy<0>27)
+     XORCY:CI->O           1   0.370   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd9_xor<0>_27 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd_289)
+     LUT2:I1->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_lut<28> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_lut<28>)
+     MUXCY:S->O            1   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_cy<28> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_cy<28>)
+     XORCY:CI->O           2   0.370   0.299  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd13_xor<29> (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd_2913)
+     LUT3:I2->O            1   0.097   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd1429 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd1429)
+     LUT4:I3->O            1   0.097   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_lut<0>30 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_lut<0>30)
+     MUXCY:S->O            0   0.353   0.000  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_cy<0>_29 (exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_cy<0>30)
+     XORCY:CI->O           1   0.370   0.295  exe_stage/al_unit/mul16/ADDERTREE_INTERNAL_Madd14_xor<0>_30 (exe_stage/al_unit/d_mul<31>)
+     LUT6:I5->O            1   0.097   0.295  exe_stage/al_unit/select/Mmux_y507 (exe_stage/al_unit/select/Mmux_y506)
+     LUT6:I5->O            2   0.097   0.299  exe_stage/al_unit/select/Mmux_y5010 (exe_stage/ealu0<31>)
+     LUT6:I5->O            2   0.097   0.283  exe_stage/save_pc8/Mmux_y25 (ealu_31_OBUF)
+     OBUF:I->O                 0.000          ealu_31_OBUF (ealu<31>)
+    ----------------------------------------
+    Total                      8.784ns (4.642ns logic, 4.142ns route)
+                                       (52.8% logic, 47.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    9.637|    2.298|    2.069|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 36.00 secs
+Total CPU time to Xst completion: 36.14 secs
+ 
+--> 
+
+Total memory usage is 462496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  814 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

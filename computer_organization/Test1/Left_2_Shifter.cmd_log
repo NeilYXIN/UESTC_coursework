@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Left_2_Shifter.xst" -ofn "D:/CPU_Test/Test1/Left_2_Shifter.syr" 
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Left_2_Shifter.xst" -ofn "D:/CPU_Test/Test1/Left_2_Shifter.syr" 

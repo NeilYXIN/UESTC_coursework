@@ -1,0 +1,34 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 14 00:59:59 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LED0" LOCATE = SITE "W3" LEVEL 1;
+COMP "LED1" LOCATE = SITE "Y4" LEVEL 1;
+COMP "Clock" LOCATE = SITE "D11" LEVEL 1;
+COMP "Reset" LOCATE = SITE "D5" LEVEL 1;
+COMP "BTN_IN" LOCATE = SITE "E6" LEVEL 1;
+PIN BTN_IN_pin<0> = BEL "BTN_IN" PINNAME PAD;
+PIN "BTN_IN_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "seg<0>" LOCATE = SITE "AA21" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "AA22" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "N15" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "AB19" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "P20" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "Y21" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "P15" LEVEL 1;
+COMP "AN_SEL<0>" LOCATE = SITE "M17" LEVEL 1;
+COMP "AN_SEL<1>" LOCATE = SITE "AA20" LEVEL 1;
+COMP "AN_SEL<2>" LOCATE = SITE "AB21" LEVEL 1;
+COMP "AN_SEL<3>" LOCATE = SITE "N16" LEVEL 1;
+COMP "AN_SEL<4>" LOCATE = SITE "P19" LEVEL 1;
+COMP "AN_SEL<5>" LOCATE = SITE "P16" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "clockdiv_0" BEL "clockdiv_1" BEL "clockdiv_2" BEL
+        "clockdiv_3" BEL "clockdiv_4" BEL "clockdiv_5" BEL "clockdiv_6" BEL
+        "clockdiv_7" BEL "clockdiv_8" BEL "clockdiv_9" BEL "clockdiv_10" BEL
+        "clockdiv_11" BEL "clockdiv_12" BEL "clockdiv_13" BEL "clockdiv_14"
+        BEL "clockdiv_15" BEL "clockdiv_16" BEL "clockdiv_17" BEL
+        "clockdiv_18" BEL "Clock_BUFGP/BUFG";
+SCHEMATIC END;
+

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/MUX32_2_1/ALUop.xst" -ofn "C:/MUX32_2_1/ALUop.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1/ALUop.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1/ALUop.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1_File/ALUop.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1_File/ALUop.syr" 

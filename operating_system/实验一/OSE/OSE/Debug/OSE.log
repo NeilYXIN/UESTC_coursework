@@ -1,0 +1,5 @@
+﻿  OSE.cpp
+c:\users\yx654\documents\visual studio 2017\projects\ose\ose\ose.cpp(1282): warning C4101: “relnum”: 未引用的局部变量
+c:\users\yx654\documents\visual studio 2017\projects\ose\ose\ose.cpp(1281): warning C4101: “relname”: 未引用的局部变量
+  OSE.vcxproj -> C:\Users\yx654\documents\visual studio 2017\Projects\OSE\Debug\OSE.exe
+  OSE.vcxproj -> C:\Users\yx654\documents\visual studio 2017\Projects\OSE\Debug\OSE.pdb (Partial PDB)

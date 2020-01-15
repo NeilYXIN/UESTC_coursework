@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Fetch.xst" -ofn "D:/CPU_Test/Test1/Fetch.syr" 
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Fetch.xst" -ofn "D:/CPU_Test/Test1/Fetch.syr" 

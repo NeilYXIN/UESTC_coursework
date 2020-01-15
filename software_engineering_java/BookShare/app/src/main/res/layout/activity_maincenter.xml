@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6d8b5"
+
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:hint="  请输入书名"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#ffffff"
+            android:id="@+id/ToSearch"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小说"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文学"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="传记"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="历史"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="青春"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="心理"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="社科"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="励志"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="政治"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="军事"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="经济"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="理财"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="旅游"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时尚"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="科学"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="医学"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="哲学"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="艺术"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="建筑"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="法律"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linearLayout5"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="农业"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="休闲"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="体育"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="外文"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算机"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="+ 我要卖书"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#d6c8a2"
+        android:id="@+id/upload"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:text="我"
+        android:textSize="20dp"
+        android:background="@drawable/circle"
+        android:textColor="#ece0c0"
+
+        android:layout_above="@+id/upload"
+        android:layout_alignRight="@+id/upload"
+        android:layout_marginBottom="10dp"
+        android:layout_alignEnd="@+id/upload" />
+
+
+
+
+</RelativeLayout>

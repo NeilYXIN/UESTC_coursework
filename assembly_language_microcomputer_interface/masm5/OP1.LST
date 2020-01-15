@@ -1,0 +1,103 @@
+Microsoft (R) Macro Assembler Version 5.00                  6/11/17 10:49:18
+                                                             Page     1-1
+
+
+ 0000				DATA      SEGMENT 
+ 0000  35			BIN1         DB  35H 
+ 0001  AB48			BIN2         DW  0AB48H 
+ 0003  0020[			ASCBUF  DB  20H DUP(?) 
+	    ??			
+			 ]	
+				
+ 0023				DATA      ENDS 
+ 0000				STACK1  SEGMENT PARA STACK 
+ 0000  0020[			DW   20H DUP(0) 
+	   0000			
+			 ]	
+				
+ 0040				STACK1  ENDS 
+ 0000				COSEG  SEGMENT 
+				ASSUME CS:COSEG,DS:DATA,SS:STACK1 
+ 0000  B8 ---- R		BEGIN:    MOV AX,DATA 
+ 0003  8E D8			          MOV DS,AX 
+ 0005  8A 26 0000 R		          MOV AH,BIN1   
+ 0009  50			          PUSH AX             ;待转换数据压栈 
+ 000A  B8 0008			          MOV AX,8   
+ 000D  50			          PUSH AX             ;转换位数压栈 
+ 000E  8D 3E 0003 R		          LEA DI,ASCBUF 
+ 0012  57			          PUSH DI      ;存放ASCII码的首址压栈 
+ 0013  E8 0029 R		          CALL BINASC   ;调用转换子程序 
+ 0016  A1 0001 R		          MOV AX,BIN2 
+ 0019  50				  PUSH AX 
+ 001A  B8 0010				  MOV AX,10H 
+ 001D  50				  PUSH AX 
+ 001E  83 C7 08			          ADD DI,8 
+ 0021  57				  PUSH DI 
+ 0022  E8 0029 R		          CALL BINASC 
+ 0025  B4 4C				  MOV  AH,4CH      
+ 0027  CD 21			          INT  21H 
+				;转换子程序 
+ 0029				BINASC PROC 
+ 0029  50			          PUSH  AX 
+ 002A  51			          PUSH  CX 
+ 002B  52			          PUSH  DX  
+ 002C  57			          PUSH  DI  
+ 002D  8B EC			          MOV  BP,SP 
+ 002F  8B 7E 0A			          MOV DI,[BP+10] ;从堆栈取入口参数 
+ 0032  8B 4E 0C			          MOV CX,[BP+12] 
+ 0035  8B 56 0E			          MOV DX,[BP+14]; 
+ 0038  D1 C2			LOP:      ROL DX,1 
+ 003A  8A C2			          MOV AL,DL 
+ 003C  24 01			          AND AL,1 
+ 003E  04 30			          ADD AL,30H 
+ 0040  88 05			          MOV [DI],AL 
+ 0042  47			          INC DI 
+ 0043  E2 F3			          LOOP LOP 
+ 0045  5F			          POP  DI 
+ 0046  5A			          POP  DX 
+ 0047  59			          POP  CX 
+Microsoft (R) Macro Assembler Version 5.00                  6/11/17 10:49:18
+                                                             Page     1-2
+
+
+ 0048  58			          POP  AX 
+ 0049  C2 0006			       RET  6    ;返回并从堆栈中弹出6个字节 
+ 004C				BINASC ENDP 
+ 004C				COSEG  ENDS 
+				         END BEGIN 
+Microsoft (R) Macro Assembler Version 5.00                  6/11/17 10:49:18
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+COSEG  . . . . . . . . . . . . .  	004C	PARA	NONE	
+DATA . . . . . . . . . . . . . .  	0023	PARA	NONE	
+STACK1 . . . . . . . . . . . . .  	0040	PARA	STACK	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+ASCBUF . . . . . . . . . . . . .  	L BYTE	0003	DATA	Length = 0020
+
+BEGIN  . . . . . . . . . . . . .  	L NEAR	0000	COSEG
+BIN1 . . . . . . . . . . . . . .  	L BYTE	0000	DATA
+BIN2 . . . . . . . . . . . . . .  	L WORD	0001	DATA
+BINASC . . . . . . . . . . . . .  	N PROC	0029	COSEG	Length = 0023
+
+LOP  . . . . . . . . . . . . . .  	L NEAR	0038	COSEG
+
+@FILENAME  . . . . . . . . . . .  	TEXT  op1		
+
+
+     53 Source  Lines
+     53 Total   Lines
+     11 Symbols
+
+  51070 + 465474 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

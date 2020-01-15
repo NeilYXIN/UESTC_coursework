@@ -1,0 +1,51 @@
+﻿  源.cpp
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(143): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(145): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(155): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(157): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(237): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(238): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(239): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(240): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(241): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(242): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(243): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(244): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(245): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(246): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(247): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(248): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(93): note: 参见“strcat”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(249): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(255): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(267): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(271): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(343): note: 参见“strncpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(370): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(371): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+c:\users\yx654\documents\visual studio 2017\projects\compilersex2\compilersex2\源.cpp(443): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 参见“strcpy”的声明
+  CompilersEX2.vcxproj -> C:\Users\yx654\Documents\Visual Studio 2017\Projects\CompilersEX2\Debug\CompilersEX2.exe
+  CompilersEX2.vcxproj -> C:\Users\yx654\Documents\Visual Studio 2017\Projects\CompilersEX2\Debug\CompilersEX2.pdb (Partial PDB)

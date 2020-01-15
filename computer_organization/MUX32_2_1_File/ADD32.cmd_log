@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1/ADD32.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1/ADD32.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1/ADD32.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1/ADD32.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1/ADD32.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1/ADD32.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1_File/ADD32.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1_File/ADD32.syr" 

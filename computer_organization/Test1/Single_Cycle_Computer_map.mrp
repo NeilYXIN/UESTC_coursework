@@ -1,0 +1,1179 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'Single_Cycle_Computer'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o Single_Cycle_Computer_map.ncd
+Single_Cycle_Computer.ngd Single_Cycle_Computer.pcf 
+Target Device  : xc6slx45
+Target Package : csg484
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 12 23:44:25 2015
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   2
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal Reset connected to top level port Reset has been
+   removed.
+WARNING:MapLib:701 - Signal Clock connected to top level port Clock has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network U0/U3/Mram_Register161/SPO has no load.
+INFO:LIT:395 - The above info message is repeated 3 more times for the following
+   (max. 5 shown):
+   U0/U3/Mram_Register72/SPO,
+   U0/U3/Mram_Register162/SPO,
+   U0/U3/Mram_Register71/SPO
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 510 block(s) removed
+ 590 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "Clock_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "Clock_BUFGP/BUFG" (CKBUF) removed.
+  The signal "Clock_BUFGP" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram1" (RAMS) removed.
+    The signal "MemOutData<0>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O11" (ROM) removed.
+      The signal "data<0>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram2" (RAMS) removed.
+    The signal "MemOutData<1>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O251" (ROM) removed.
+      The signal "data<31>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O241" (ROM) removed.
+      The signal "data<30>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O221" (ROM) removed.
+      The signal "data<29>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O171" (ROM) removed.
+      The signal "data<24>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O101" (ROM) removed.
+      The signal "data<18>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O41" (ROM) removed.
+      The signal "data<12>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O201" (ROM) removed.
+      The signal "data<27>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O211" (ROM) removed.
+      The signal "data<28>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O191" (ROM) removed.
+      The signal "data<26>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O181" (ROM) removed.
+      The signal "data<25>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O161" (ROM) removed.
+      The signal "data<23>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O141" (ROM) removed.
+      The signal "data<21>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O151" (ROM) removed.
+      The signal "data<22>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O91" (ROM) removed.
+      The signal "data<17>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O31" (ROM) removed.
+      The signal "data<11>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O71" (ROM) removed.
+      The signal "data<15>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O131" (ROM) removed.
+      The signal "data<20>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O121" (ROM) removed.
+      The signal "data<1>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O111" (ROM) removed.
+      The signal "data<19>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O51" (ROM) removed.
+      The signal "data<13>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O61" (ROM) removed.
+      The signal "data<14>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O81" (ROM) removed.
+      The signal "data<16>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O21" (ROM) removed.
+      The signal "data<10>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram3" (RAMS) removed.
+    The signal "MemOutData<2>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O231" (ROM) removed.
+      The signal "data<2>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram6" (RAMS) removed.
+    The signal "MemOutData<5>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O281" (ROM) removed.
+      The signal "data<5>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram4" (RAMS) removed.
+    The signal "MemOutData<3>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O261" (ROM) removed.
+      The signal "data<3>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram5" (RAMS) removed.
+    The signal "MemOutData<4>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O271" (ROM) removed.
+      The signal "data<4>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram7" (RAMS) removed.
+    The signal "MemOutData<6>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O291" (ROM) removed.
+      The signal "data<6>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram8" (RAMS) removed.
+    The signal "MemOutData<7>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O301" (ROM) removed.
+      The signal "data<7>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram9" (RAMS) removed.
+    The signal "MemOutData<8>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O311" (ROM) removed.
+      The signal "data<8>" is sourceless and has been removed.
+   Sourceless block "U2/Mram_ram10" (RAMS) removed.
+    The signal "MemOutData<9>" is sourceless and has been removed.
+     Sourceless block "U3/Mmux_O321" (ROM) removed.
+      The signal "data<9>" is sourceless and has been removed.
+   Sourceless block "U0/U0/PC_2" (FF) removed.
+    The signal "U0/U0/PC<2>" is sourceless and has been removed.
+     Sourceless block "U0/U0/U1/Madd_C_lut<2>_INV_0" (BUF) removed.
+      The signal "U0/U0/U1/Madd_C_lut<2>" is sourceless and has been removed.
+       Sourceless block "U0/U0/U1/Madd_C_cy<2>" (MUX) removed.
+        The signal "U0/U0/U1/Madd_C_cy<2>" is sourceless and has been removed.
+         Sourceless block "U0/U0/U1/Madd_C_cy<3>" (MUX) removed.
+          The signal "U0/U0/U1/Madd_C_cy<3>" is sourceless and has been removed.
+           Sourceless block "U0/U0/U1/Madd_C_cy<4>" (MUX) removed.
+            The signal "U0/U0/U1/Madd_C_cy<4>" is sourceless and has been removed.
+             Sourceless block "U0/U0/U1/Madd_C_cy<5>" (MUX) removed.
+              The signal "U0/U0/U1/Madd_C_cy<5>" is sourceless and has been removed.
+               Sourceless block "U0/U0/U1/Madd_C_cy<6>" (MUX) removed.
+                The signal "U0/U0/U1/Madd_C_cy<6>" is sourceless and has been removed.
+                 Sourceless block "U0/U0/U1/Madd_C_cy<7>" (MUX) removed.
+                  The signal "U0/U0/U1/Madd_C_cy<7>" is sourceless and has been removed.
+                   Sourceless block "U0/U0/U1/Madd_C_cy<8>" (MUX) removed.
+                    The signal "U0/U0/U1/Madd_C_cy<8>" is sourceless and has been removed.
+                     Sourceless block "U0/U0/U1/Madd_C_cy<9>" (MUX) removed.
+                      The signal "U0/U0/U1/Madd_C_cy<9>" is sourceless and has been removed.
+                       Sourceless block "U0/U0/U1/Madd_C_cy<10>" (MUX) removed.
+                        The signal "U0/U0/U1/Madd_C_cy<10>" is sourceless and has been removed.
+                         Sourceless block "U0/U0/U1/Madd_C_cy<11>" (MUX) removed.
+                          The signal "U0/U0/U1/Madd_C_cy<11>" is sourceless and has been removed.
+                           Sourceless block "U0/U0/U1/Madd_C_cy<12>" (MUX) removed.
+                            The signal "U0/U0/U1/Madd_C_cy<12>" is sourceless and has been removed.
+                             Sourceless block "U0/U0/U1/Madd_C_cy<13>" (MUX) removed.
+                              The signal "U0/U0/U1/Madd_C_cy<13>" is sourceless and has been removed.
+                               Sourceless block "U0/U0/U1/Madd_C_cy<14>" (MUX) removed.
+                                The signal "U0/U0/U1/Madd_C_cy<14>" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/U1/Madd_C_cy<15>" (MUX) removed.
+                                  The signal "U0/U0/U1/Madd_C_cy<15>" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/U1/Madd_C_cy<16>" (MUX) removed.
+                                    The signal "U0/U0/U1/Madd_C_cy<16>" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/U1/Madd_C_cy<17>" (MUX) removed.
+                                      The signal "U0/U0/U1/Madd_C_cy<17>" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/U1/Madd_C_cy<18>" (MUX) removed.
+                                        The signal "U0/U0/U1/Madd_C_cy<18>" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/U1/Madd_C_cy<19>" (MUX) removed.
+                                          The signal "U0/U0/U1/Madd_C_cy<19>" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/U1/Madd_C_cy<20>" (MUX) removed.
+                                            The signal "U0/U0/U1/Madd_C_cy<20>" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/U1/Madd_C_cy<21>" (MUX) removed.
+                                              The signal "U0/U0/U1/Madd_C_cy<21>" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/U1/Madd_C_cy<22>" (MUX) removed.
+                                                The signal "U0/U0/U1/Madd_C_cy<22>" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/U1/Madd_C_cy<23>" (MUX) removed.
+*The signal "U0/U0/U1/Madd_C_cy<23>" is sourceless and has been removed.
+* Sourceless block "U0/U0/U1/Madd_C_cy<24>" (MUX) removed.
+*  The signal "U0/U0/U1/Madd_C_cy<24>" is sourceless and has been removed.
+*   Sourceless block "U0/U0/U1/Madd_C_cy<25>" (MUX) removed.
+*    The signal "U0/U0/U1/Madd_C_cy<25>" is sourceless and has been removed.
+*     Sourceless block "U0/U0/U1/Madd_C_cy<26>" (MUX) removed.
+*      The signal "U0/U0/U1/Madd_C_cy<26>" is sourceless and has been removed.
+*       Sourceless block "U0/U0/U1/Madd_C_cy<27>" (MUX) removed.
+*        The signal "U0/U0/U1/Madd_C_cy<27>" is sourceless and has been removed.
+*         Sourceless block "U0/U0/U1/Madd_C_cy<28>" (MUX) removed.
+*          The signal "U0/U0/U1/Madd_C_cy<28>" is sourceless and has been removed.
+*           Sourceless block "U0/U0/U1/Madd_C_cy<29>" (MUX) removed.
+*            The signal "U0/U0/U1/Madd_C_cy<29>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/U1/Madd_C_cy<30>" (MUX) removed.
+*              The signal "U0/U0/U1/Madd_C_cy<30>" is sourceless and has been removed.
+*               Sourceless block "U0/U0/U1/Madd_C_xor<31>" (XOR) removed.
+*                The signal "U0/U0/sum0<31>" is sourceless and has been removed.
+*                 Sourceless block "U0/U0/U2/Madd_C_lut<31>" (ROM) removed.
+*                  The signal "U0/U0/U2/Madd_C_lut<31>" is sourceless and has been removed.
+*                   Sourceless block "U0/U0/U2/Madd_C_xor<31>" (XOR) removed.
+*                    The signal "U0/U0/sum1<31>" is sourceless and has been removed.
+*                     Sourceless block "U0/U0/M1/Mmux_O251" (ROM) removed.
+*                      The signal "U0/U0/next_pc<31>" is sourceless and has been removed.
+*                       Sourceless block "U0/U0/PC_31" (FF) removed.
+*                        The signal "U0/U0/PC<31>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/U1/Madd_C_xor<30>" (XOR) removed.
+*              The signal "U0/U0/sum0<30>" is sourceless and has been removed.
+*               Sourceless block "U0/U0/U2/Madd_C_lut<30>" (ROM) removed.
+*                The signal "U0/U0/U2/Madd_C_lut<30>" is sourceless and has been removed.
+*                 Sourceless block "U0/U0/U2/Madd_C_cy<30>" (MUX) removed.
+*                  The signal "U0/U0/U2/Madd_C_cy<30>" is sourceless and has been removed.
+*                 Sourceless block "U0/U0/U2/Madd_C_xor<30>" (XOR) removed.
+*                  The signal "U0/U0/sum1<30>" is sourceless and has been removed.
+*                   Sourceless block "U0/U0/M1/Mmux_O241" (ROM) removed.
+*                    The signal "U0/U0/next_pc<30>" is sourceless and has been removed.
+*                     Sourceless block "U0/U0/PC_30" (FF) removed.
+*                      The signal "U0/U0/PC<30>" is sourceless and has been removed.
+*                       Sourceless block "U0/U0/U1/Madd_C_cy<30>_rt" (ROM) removed.
+*                        The signal "U0/U0/U1/Madd_C_cy<30>_rt" is sourceless and has been removed.
+*           Sourceless block "U0/U0/U1/Madd_C_xor<29>" (XOR) removed.
+*            The signal "U0/U0/sum0<29>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/U2/Madd_C_lut<29>" (ROM) removed.
+*              The signal "U0/U0/U2/Madd_C_lut<29>" is sourceless and has been removed.
+*               Sourceless block "U0/U0/U2/Madd_C_cy<29>" (MUX) removed.
+*                The signal "U0/U0/U2/Madd_C_cy<29>" is sourceless and has been removed.
+*               Sourceless block "U0/U0/U2/Madd_C_xor<29>" (XOR) removed.
+*                The signal "U0/U0/sum1<29>" is sourceless and has been removed.
+*                 Sourceless block "U0/U0/M1/Mmux_O221" (ROM) removed.
+*                  The signal "U0/U0/next_pc<29>" is sourceless and has been removed.
+*                   Sourceless block "U0/U0/PC_29" (FF) removed.
+*                    The signal "U0/U0/PC<29>" is sourceless and has been removed.
+*                     Sourceless block "U0/U0/U1/Madd_C_cy<29>_rt" (ROM) removed.
+*                      The signal "U0/U0/U1/Madd_C_cy<29>_rt" is sourceless and has been removed.
+*         Sourceless block "U0/U0/U1/Madd_C_xor<28>" (XOR) removed.
+*          The signal "U0/U0/sum0<28>" is sourceless and has been removed.
+*           Sourceless block "U0/U0/U2/Madd_C_lut<28>" (ROM) removed.
+*            The signal "U0/U0/U2/Madd_C_lut<28>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/U2/Madd_C_cy<28>" (MUX) removed.
+*              The signal "U0/U0/U2/Madd_C_cy<28>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/U2/Madd_C_xor<28>" (XOR) removed.
+*              The signal "U0/U0/sum1<28>" is sourceless and has been removed.
+*               Sourceless block "U0/U0/M1/Mmux_O211" (ROM) removed.
+*                The signal "U0/U0/next_pc<28>" is sourceless and has been removed.
+*                 Sourceless block "U0/U0/PC_28" (FF) removed.
+*                  The signal "U0/U0/PC<28>" is sourceless and has been removed.
+*                   Sourceless block "U0/U0/U1/Madd_C_cy<28>_rt" (ROM) removed.
+*                    The signal "U0/U0/U1/Madd_C_cy<28>_rt" is sourceless and has been removed.
+*       Sourceless block "U0/U0/U1/Madd_C_xor<27>" (XOR) removed.
+*        The signal "U0/U0/sum0<27>" is sourceless and has been removed.
+*         Sourceless block "U0/U0/U2/Madd_C_lut<27>" (ROM) removed.
+*          The signal "U0/U0/U2/Madd_C_lut<27>" is sourceless and has been removed.
+*           Sourceless block "U0/U0/U2/Madd_C_cy<27>" (MUX) removed.
+*            The signal "U0/U0/U2/Madd_C_cy<27>" is sourceless and has been removed.
+*           Sourceless block "U0/U0/U2/Madd_C_xor<27>" (XOR) removed.
+*            The signal "U0/U0/sum1<27>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/M1/Mmux_O201" (ROM) removed.
+*              The signal "U0/U0/next_pc<27>" is sourceless and has been removed.
+*               Sourceless block "U0/U0/PC_27" (FF) removed.
+*                The signal "U0/U0/PC<27>" is sourceless and has been removed.
+*                 Sourceless block "U0/U0/U1/Madd_C_cy<27>_rt" (ROM) removed.
+*                  The signal "U0/U0/U1/Madd_C_cy<27>_rt" is sourceless and has been removed.
+*     Sourceless block "U0/U0/U1/Madd_C_xor<26>" (XOR) removed.
+*      The signal "U0/U0/sum0<26>" is sourceless and has been removed.
+*       Sourceless block "U0/U0/U2/Madd_C_lut<26>" (ROM) removed.
+*        The signal "U0/U0/U2/Madd_C_lut<26>" is sourceless and has been removed.
+*         Sourceless block "U0/U0/U2/Madd_C_cy<26>" (MUX) removed.
+*          The signal "U0/U0/U2/Madd_C_cy<26>" is sourceless and has been removed.
+*         Sourceless block "U0/U0/U2/Madd_C_xor<26>" (XOR) removed.
+*          The signal "U0/U0/sum1<26>" is sourceless and has been removed.
+*           Sourceless block "U0/U0/M1/Mmux_O191" (ROM) removed.
+*            The signal "U0/U0/next_pc<26>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/PC_26" (FF) removed.
+*              The signal "U0/U0/PC<26>" is sourceless and has been removed.
+*               Sourceless block "U0/U0/U1/Madd_C_cy<26>_rt" (ROM) removed.
+*                The signal "U0/U0/U1/Madd_C_cy<26>_rt" is sourceless and has been removed.
+*   Sourceless block "U0/U0/U1/Madd_C_xor<25>" (XOR) removed.
+*    The signal "U0/U0/sum0<25>" is sourceless and has been removed.
+*     Sourceless block "U0/U0/U2/Madd_C_lut<25>" (ROM) removed.
+*      The signal "U0/U0/U2/Madd_C_lut<25>" is sourceless and has been removed.
+*       Sourceless block "U0/U0/U2/Madd_C_cy<25>" (MUX) removed.
+*        The signal "U0/U0/U2/Madd_C_cy<25>" is sourceless and has been removed.
+*       Sourceless block "U0/U0/U2/Madd_C_xor<25>" (XOR) removed.
+*        The signal "U0/U0/sum1<25>" is sourceless and has been removed.
+*         Sourceless block "U0/U0/M1/Mmux_O181" (ROM) removed.
+*          The signal "U0/U0/next_pc<25>" is sourceless and has been removed.
+*           Sourceless block "U0/U0/PC_25" (FF) removed.
+*            The signal "U0/U0/PC<25>" is sourceless and has been removed.
+*             Sourceless block "U0/U0/U1/Madd_C_cy<25>_rt" (ROM) removed.
+*              The signal "U0/U0/U1/Madd_C_cy<25>_rt" is sourceless and has been removed.
+* Sourceless block "U0/U0/U1/Madd_C_xor<24>" (XOR) removed.
+*  The signal "U0/U0/sum0<24>" is sourceless and has been removed.
+*   Sourceless block "U0/U0/U2/Madd_C_lut<24>" (ROM) removed.
+*    The signal "U0/U0/U2/Madd_C_lut<24>" is sourceless and has been removed.
+*     Sourceless block "U0/U0/U2/Madd_C_cy<24>" (MUX) removed.
+*      The signal "U0/U0/U2/Madd_C_cy<24>" is sourceless and has been removed.
+*     Sourceless block "U0/U0/U2/Madd_C_xor<24>" (XOR) removed.
+*      The signal "U0/U0/sum1<24>" is sourceless and has been removed.
+*       Sourceless block "U0/U0/M1/Mmux_O171" (ROM) removed.
+*        The signal "U0/U0/next_pc<24>" is sourceless and has been removed.
+*         Sourceless block "U0/U0/PC_24" (FF) removed.
+*          The signal "U0/U0/PC<24>" is sourceless and has been removed.
+*           Sourceless block "U0/U0/U1/Madd_C_cy<24>_rt" (ROM) removed.
+*            The signal "U0/U0/U1/Madd_C_cy<24>_rt" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/U1/Madd_C_xor<23>" (XOR) removed.
+*The signal "U0/U0/sum0<23>" is sourceless and has been removed.
+* Sourceless block "U0/U0/U2/Madd_C_lut<23>" (ROM) removed.
+*  The signal "U0/U0/U2/Madd_C_lut<23>" is sourceless and has been removed.
+*   Sourceless block "U0/U0/U2/Madd_C_cy<23>" (MUX) removed.
+*    The signal "U0/U0/U2/Madd_C_cy<23>" is sourceless and has been removed.
+*   Sourceless block "U0/U0/U2/Madd_C_xor<23>" (XOR) removed.
+*    The signal "U0/U0/sum1<23>" is sourceless and has been removed.
+*     Sourceless block "U0/U0/M1/Mmux_O161" (ROM) removed.
+*      The signal "U0/U0/next_pc<23>" is sourceless and has been removed.
+*       Sourceless block "U0/U0/PC_23" (FF) removed.
+*        The signal "U0/U0/PC<23>" is sourceless and has been removed.
+*         Sourceless block "U0/U0/U1/Madd_C_cy<23>_rt" (ROM) removed.
+*          The signal "U0/U0/U1/Madd_C_cy<23>_rt" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/U1/Madd_C_xor<22>" (XOR) removed.
+                                                The signal "U0/U0/sum0<22>" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/U2/Madd_C_lut<22>" (ROM) removed.
+*The signal "U0/U0/U2/Madd_C_lut<22>" is sourceless and has been removed.
+* Sourceless block "U0/U0/U2/Madd_C_cy<22>" (MUX) removed.
+*  The signal "U0/U0/U2/Madd_C_cy<22>" is sourceless and has been removed.
+* Sourceless block "U0/U0/U2/Madd_C_xor<22>" (XOR) removed.
+*  The signal "U0/U0/sum1<22>" is sourceless and has been removed.
+*   Sourceless block "U0/U0/M1/Mmux_O151" (ROM) removed.
+*    The signal "U0/U0/next_pc<22>" is sourceless and has been removed.
+*     Sourceless block "U0/U0/PC_22" (FF) removed.
+*      The signal "U0/U0/PC<22>" is sourceless and has been removed.
+*       Sourceless block "U0/U0/U1/Madd_C_cy<22>_rt" (ROM) removed.
+*        The signal "U0/U0/U1/Madd_C_cy<22>_rt" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/U1/Madd_C_xor<21>" (XOR) removed.
+                                              The signal "U0/U0/sum0<21>" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/U2/Madd_C_lut<21>" (ROM) removed.
+                                                The signal "U0/U0/U2/Madd_C_lut<21>" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/U2/Madd_C_cy<21>" (MUX) removed.
+*The signal "U0/U0/U2/Madd_C_cy<21>" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/U2/Madd_C_xor<21>" (XOR) removed.
+*The signal "U0/U0/sum1<21>" is sourceless and has been removed.
+* Sourceless block "U0/U0/M1/Mmux_O141" (ROM) removed.
+*  The signal "U0/U0/next_pc<21>" is sourceless and has been removed.
+*   Sourceless block "U0/U0/PC_21" (FF) removed.
+*    The signal "U0/U0/PC<21>" is sourceless and has been removed.
+*     Sourceless block "U0/U0/U1/Madd_C_cy<21>_rt" (ROM) removed.
+*      The signal "U0/U0/U1/Madd_C_cy<21>_rt" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/U1/Madd_C_xor<20>" (XOR) removed.
+                                            The signal "U0/U0/sum0<20>" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/U2/Madd_C_lut<20>" (ROM) removed.
+                                              The signal "U0/U0/U2/Madd_C_lut<20>" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/U2/Madd_C_cy<20>" (MUX) removed.
+                                                The signal "U0/U0/U2/Madd_C_cy<20>" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/U2/Madd_C_xor<20>" (XOR) removed.
+                                                The signal "U0/U0/sum1<20>" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/M1/Mmux_O131" (ROM) removed.
+*The signal "U0/U0/next_pc<20>" is sourceless and has been removed.
+* Sourceless block "U0/U0/PC_20" (FF) removed.
+*  The signal "U0/U0/PC<20>" is sourceless and has been removed.
+*   Sourceless block "U0/U0/U1/Madd_C_cy<20>_rt" (ROM) removed.
+*    The signal "U0/U0/U1/Madd_C_cy<20>_rt" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/U1/Madd_C_xor<19>" (XOR) removed.
+                                          The signal "U0/U0/sum0<19>" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/U2/Madd_C_lut<19>" (ROM) removed.
+                                            The signal "U0/U0/U2/Madd_C_lut<19>" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/U2/Madd_C_cy<19>" (MUX) removed.
+                                              The signal "U0/U0/U2/Madd_C_cy<19>" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/U2/Madd_C_xor<19>" (XOR) removed.
+                                              The signal "U0/U0/sum1<19>" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/M1/Mmux_O111" (ROM) removed.
+                                                The signal "U0/U0/next_pc<19>" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/PC_19" (FF) removed.
+*The signal "U0/U0/PC<19>" is sourceless and has been removed.
+* Sourceless block "U0/U0/U1/Madd_C_cy<19>_rt" (ROM) removed.
+*  The signal "U0/U0/U1/Madd_C_cy<19>_rt" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/U1/Madd_C_xor<18>" (XOR) removed.
+                                        The signal "U0/U0/sum0<18>" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/U2/Madd_C_lut<18>" (ROM) removed.
+                                          The signal "U0/U0/U2/Madd_C_lut<18>" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/U2/Madd_C_cy<18>" (MUX) removed.
+                                            The signal "U0/U0/U2/Madd_C_cy<18>" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/U2/Madd_C_xor<18>" (XOR) removed.
+                                            The signal "U0/U0/sum1<18>" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/M1/Mmux_O101" (ROM) removed.
+                                              The signal "U0/U0/next_pc<18>" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/PC_18" (FF) removed.
+                                                The signal "U0/U0/PC<18>" is sourceless and has been removed.
+                                                 Sourceless block "U0/U0/U1/Madd_C_cy<18>_rt" (ROM) removed.
+*The signal "U0/U0/U1/Madd_C_cy<18>_rt" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/U1/Madd_C_xor<17>" (XOR) removed.
+                                      The signal "U0/U0/sum0<17>" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/U2/Madd_C_lut<17>" (ROM) removed.
+                                        The signal "U0/U0/U2/Madd_C_lut<17>" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/U2/Madd_C_cy<17>" (MUX) removed.
+                                          The signal "U0/U0/U2/Madd_C_cy<17>" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/U2/Madd_C_xor<17>" (XOR) removed.
+                                          The signal "U0/U0/sum1<17>" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/M1/Mmux_O91" (ROM) removed.
+                                            The signal "U0/U0/next_pc<17>" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/PC_17" (FF) removed.
+                                              The signal "U0/U0/PC<17>" is sourceless and has been removed.
+                                               Sourceless block "U0/U0/U1/Madd_C_cy<17>_rt" (ROM) removed.
+                                                The signal "U0/U0/U1/Madd_C_cy<17>_rt" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/U1/Madd_C_xor<16>" (XOR) removed.
+                                    The signal "U0/U0/sum0<16>" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/U2/Madd_C_lut<16>" (ROM) removed.
+                                      The signal "U0/U0/U2/Madd_C_lut<16>" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/U2/Madd_C_cy<16>" (MUX) removed.
+                                        The signal "U0/U0/U2/Madd_C_cy<16>" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/U2/Madd_C_xor<16>" (XOR) removed.
+                                        The signal "U0/U0/sum1<16>" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/M1/Mmux_O81" (ROM) removed.
+                                          The signal "U0/U0/next_pc<16>" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/PC_16" (FF) removed.
+                                            The signal "U0/U0/PC<16>" is sourceless and has been removed.
+                                             Sourceless block "U0/U0/U1/Madd_C_cy<16>_rt" (ROM) removed.
+                                              The signal "U0/U0/U1/Madd_C_cy<16>_rt" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/U1/Madd_C_xor<15>" (XOR) removed.
+                                  The signal "U0/U0/sum0<15>" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/U2/Madd_C_lut<15>" (ROM) removed.
+                                    The signal "U0/U0/U2/Madd_C_lut<15>" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/U2/Madd_C_cy<15>" (MUX) removed.
+                                      The signal "U0/U0/U2/Madd_C_cy<15>" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/U2/Madd_C_xor<15>" (XOR) removed.
+                                      The signal "U0/U0/sum1<15>" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/M1/Mmux_O71" (ROM) removed.
+                                        The signal "U0/U0/next_pc<15>" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/PC_15" (FF) removed.
+                                          The signal "U0/U0/PC<15>" is sourceless and has been removed.
+                                           Sourceless block "U0/U0/U1/Madd_C_cy<15>_rt" (ROM) removed.
+                                            The signal "U0/U0/U1/Madd_C_cy<15>_rt" is sourceless and has been removed.
+                               Sourceless block "U0/U0/U1/Madd_C_xor<14>" (XOR) removed.
+                                The signal "U0/U0/sum0<14>" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/U2/Madd_C_lut<14>" (ROM) removed.
+                                  The signal "U0/U0/U2/Madd_C_lut<14>" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/U2/Madd_C_cy<14>" (MUX) removed.
+                                    The signal "U0/U0/U2/Madd_C_cy<14>" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/U2/Madd_C_xor<14>" (XOR) removed.
+                                    The signal "U0/U0/sum1<14>" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/M1/Mmux_O61" (ROM) removed.
+                                      The signal "U0/U0/next_pc<14>" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/PC_14" (FF) removed.
+                                        The signal "U0/U0/PC<14>" is sourceless and has been removed.
+                                         Sourceless block "U0/U0/U1/Madd_C_cy<14>_rt" (ROM) removed.
+                                          The signal "U0/U0/U1/Madd_C_cy<14>_rt" is sourceless and has been removed.
+                             Sourceless block "U0/U0/U1/Madd_C_xor<13>" (XOR) removed.
+                              The signal "U0/U0/sum0<13>" is sourceless and has been removed.
+                               Sourceless block "U0/U0/U2/Madd_C_lut<13>" (ROM) removed.
+                                The signal "U0/U0/U2/Madd_C_lut<13>" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/U2/Madd_C_cy<13>" (MUX) removed.
+                                  The signal "U0/U0/U2/Madd_C_cy<13>" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/U2/Madd_C_xor<13>" (XOR) removed.
+                                  The signal "U0/U0/sum1<13>" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/M1/Mmux_O51" (ROM) removed.
+                                    The signal "U0/U0/next_pc<13>" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/PC_13" (FF) removed.
+                                      The signal "U0/U0/PC<13>" is sourceless and has been removed.
+                                       Sourceless block "U0/U0/U1/Madd_C_cy<13>_rt" (ROM) removed.
+                                        The signal "U0/U0/U1/Madd_C_cy<13>_rt" is sourceless and has been removed.
+                           Sourceless block "U0/U0/U1/Madd_C_xor<12>" (XOR) removed.
+                            The signal "U0/U0/sum0<12>" is sourceless and has been removed.
+                             Sourceless block "U0/U0/U2/Madd_C_lut<12>" (ROM) removed.
+                              The signal "U0/U0/U2/Madd_C_lut<12>" is sourceless and has been removed.
+                               Sourceless block "U0/U0/U2/Madd_C_cy<12>" (MUX) removed.
+                                The signal "U0/U0/U2/Madd_C_cy<12>" is sourceless and has been removed.
+                               Sourceless block "U0/U0/U2/Madd_C_xor<12>" (XOR) removed.
+                                The signal "U0/U0/sum1<12>" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/M1/Mmux_O41" (ROM) removed.
+                                  The signal "U0/U0/next_pc<12>" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/PC_12" (FF) removed.
+                                    The signal "U0/U0/PC<12>" is sourceless and has been removed.
+                                     Sourceless block "U0/U0/U1/Madd_C_cy<12>_rt" (ROM) removed.
+                                      The signal "U0/U0/U1/Madd_C_cy<12>_rt" is sourceless and has been removed.
+                         Sourceless block "U0/U0/U1/Madd_C_xor<11>" (XOR) removed.
+                          The signal "U0/U0/sum0<11>" is sourceless and has been removed.
+                           Sourceless block "U0/U0/U2/Madd_C_lut<11>" (ROM) removed.
+                            The signal "U0/U0/U2/Madd_C_lut<11>" is sourceless and has been removed.
+                             Sourceless block "U0/U0/U2/Madd_C_cy<11>" (MUX) removed.
+                              The signal "U0/U0/U2/Madd_C_cy<11>" is sourceless and has been removed.
+                             Sourceless block "U0/U0/U2/Madd_C_xor<11>" (XOR) removed.
+                              The signal "U0/U0/sum1<11>" is sourceless and has been removed.
+                               Sourceless block "U0/U0/M1/Mmux_O33" (ROM) removed.
+                                The signal "U0/U0/next_pc<11>" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/PC_11" (FF) removed.
+                                  The signal "U0/U0/PC<11>" is sourceless and has been removed.
+                                   Sourceless block "U0/U0/U1/Madd_C_cy<11>_rt" (ROM) removed.
+                                    The signal "U0/U0/U1/Madd_C_cy<11>_rt" is sourceless and has been removed.
+                       Sourceless block "U0/U0/U1/Madd_C_xor<10>" (XOR) removed.
+                        The signal "U0/U0/sum0<10>" is sourceless and has been removed.
+                         Sourceless block "U0/U0/U2/Madd_C_lut<10>" (ROM) removed.
+                          The signal "U0/U0/U2/Madd_C_lut<10>" is sourceless and has been removed.
+                           Sourceless block "U0/U0/U2/Madd_C_cy<10>" (MUX) removed.
+                            The signal "U0/U0/U2/Madd_C_cy<10>" is sourceless and has been removed.
+                           Sourceless block "U0/U0/U2/Madd_C_xor<10>" (XOR) removed.
+                            The signal "U0/U0/sum1<10>" is sourceless and has been removed.
+                             Sourceless block "U0/U0/M1/Mmux_O210" (ROM) removed.
+                              The signal "U0/U0/next_pc<10>" is sourceless and has been removed.
+                               Sourceless block "U0/U0/PC_10" (FF) removed.
+                                The signal "U0/U0/PC<10>" is sourceless and has been removed.
+                                 Sourceless block "U0/U0/U1/Madd_C_cy<10>_rt" (ROM) removed.
+                                  The signal "U0/U0/U1/Madd_C_cy<10>_rt" is sourceless and has been removed.
+                     Sourceless block "U0/U0/U1/Madd_C_xor<9>" (XOR) removed.
+                      The signal "U0/U0/sum0<9>" is sourceless and has been removed.
+                       Sourceless block "U0/U0/U2/Madd_C_lut<9>" (ROM) removed.
+                        The signal "U0/U0/U2/Madd_C_lut<9>" is sourceless and has been removed.
+                         Sourceless block "U0/U0/U2/Madd_C_cy<9>" (MUX) removed.
+                          The signal "U0/U0/U2/Madd_C_cy<9>" is sourceless and has been removed.
+                         Sourceless block "U0/U0/U2/Madd_C_xor<9>" (XOR) removed.
+                          The signal "U0/U0/sum1<9>" is sourceless and has been removed.
+                           Sourceless block "U0/U0/M1/Mmux_O321" (ROM) removed.
+                            The signal "U0/U0/next_pc<9>" is sourceless and has been removed.
+                             Sourceless block "U0/U0/PC_9" (FF) removed.
+                              The signal "U0/U0/PC<9>" is sourceless and has been removed.
+                               Sourceless block "U0/U0/U1/Madd_C_cy<9>_rt" (ROM) removed.
+                                The signal "U0/U0/U1/Madd_C_cy<9>_rt" is sourceless and has been removed.
+                   Sourceless block "U0/U0/U1/Madd_C_xor<8>" (XOR) removed.
+                    The signal "U0/U0/sum0<8>" is sourceless and has been removed.
+                     Sourceless block "U0/U0/U2/Madd_C_lut<8>" (ROM) removed.
+                      The signal "U0/U0/U2/Madd_C_lut<8>" is sourceless and has been removed.
+                       Sourceless block "U0/U0/U2/Madd_C_cy<8>" (MUX) removed.
+                        The signal "U0/U0/U2/Madd_C_cy<8>" is sourceless and has been removed.
+                       Sourceless block "U0/U0/U2/Madd_C_xor<8>" (XOR) removed.
+                        The signal "U0/U0/sum1<8>" is sourceless and has been removed.
+                         Sourceless block "U0/U0/M1/Mmux_O311" (ROM) removed.
+                          The signal "U0/U0/next_pc<8>" is sourceless and has been removed.
+                           Sourceless block "U0/U0/PC_8" (FF) removed.
+                            The signal "U0/U0/PC<8>" is sourceless and has been removed.
+                             Sourceless block "U0/U0/U1/Madd_C_cy<8>_rt" (ROM) removed.
+                              The signal "U0/U0/U1/Madd_C_cy<8>_rt" is sourceless and has been removed.
+                 Sourceless block "U0/U0/U1/Madd_C_xor<7>" (XOR) removed.
+                  The signal "U0/U0/sum0<7>" is sourceless and has been removed.
+                   Sourceless block "U0/U0/U2/Madd_C_lut<7>" (ROM) removed.
+                    The signal "U0/U0/U2/Madd_C_lut<7>" is sourceless and has been removed.
+                     Sourceless block "U0/U0/U2/Madd_C_cy<7>" (MUX) removed.
+                      The signal "U0/U0/U2/Madd_C_cy<7>" is sourceless and has been removed.
+                     Sourceless block "U0/U0/U2/Madd_C_xor<7>" (XOR) removed.
+                      The signal "U0/U0/sum1<7>" is sourceless and has been removed.
+                       Sourceless block "U0/U0/M1/Mmux_O301" (ROM) removed.
+                        The signal "U0/U0/next_pc<7>" is sourceless and has been removed.
+                         Sourceless block "U0/U0/PC_7" (FF) removed.
+                          The signal "U0/U0/PC<7>" is sourceless and has been removed.
+                           Sourceless block "U0/U0/U1/Madd_C_cy<7>_rt" (ROM) removed.
+                            The signal "U0/U0/U1/Madd_C_cy<7>_rt" is sourceless and has been removed.
+               Sourceless block "U0/U0/U1/Madd_C_xor<6>" (XOR) removed.
+                The signal "U0/U0/sum0<6>" is sourceless and has been removed.
+                 Sourceless block "U0/U0/U2/Madd_C_lut<6>" (ROM) removed.
+                  The signal "U0/U0/U2/Madd_C_lut<6>" is sourceless and has been removed.
+                   Sourceless block "U0/U0/U2/Madd_C_cy<6>" (MUX) removed.
+                    The signal "U0/U0/U2/Madd_C_cy<6>" is sourceless and has been removed.
+                   Sourceless block "U0/U0/U2/Madd_C_xor<6>" (XOR) removed.
+                    The signal "U0/U0/sum1<6>" is sourceless and has been removed.
+                     Sourceless block "U0/U0/M1/Mmux_O291" (ROM) removed.
+                      The signal "U0/U0/next_pc<6>" is sourceless and has been removed.
+                       Sourceless block "U0/U0/PC_6" (FF) removed.
+                        The signal "U0/U0/PC<6>" is sourceless and has been removed.
+                         Sourceless block "U0/U0/U1/Madd_C_cy<6>_rt" (ROM) removed.
+                          The signal "U0/U0/U1/Madd_C_cy<6>_rt" is sourceless and has been removed.
+             Sourceless block "U0/U0/U1/Madd_C_xor<5>" (XOR) removed.
+              The signal "U0/U0/sum0<5>" is sourceless and has been removed.
+               Sourceless block "U0/U0/U2/Madd_C_lut<5>" (ROM) removed.
+                The signal "U0/U0/U2/Madd_C_lut<5>" is sourceless and has been removed.
+                 Sourceless block "U0/U0/U2/Madd_C_cy<5>" (MUX) removed.
+                  The signal "U0/U0/U2/Madd_C_cy<5>" is sourceless and has been removed.
+                 Sourceless block "U0/U0/U2/Madd_C_xor<5>" (XOR) removed.
+                  The signal "U0/U0/sum1<5>" is sourceless and has been removed.
+                   Sourceless block "U0/U0/M1/Mmux_O281" (ROM) removed.
+                    The signal "U0/U0/next_pc<5>" is sourceless and has been removed.
+                     Sourceless block "U0/U0/PC_5" (FF) removed.
+                      The signal "U0/U0/PC<5>" is sourceless and has been removed.
+                       Sourceless block "U0/U0/U1/Madd_C_cy<5>_rt" (ROM) removed.
+                        The signal "U0/U0/U1/Madd_C_cy<5>_rt" is sourceless and has been removed.
+           Sourceless block "U0/U0/U1/Madd_C_xor<4>" (XOR) removed.
+            The signal "U0/U0/sum0<4>" is sourceless and has been removed.
+             Sourceless block "U0/U0/U2/Madd_C_lut<4>" (ROM) removed.
+              The signal "U0/U0/U2/Madd_C_lut<4>" is sourceless and has been removed.
+               Sourceless block "U0/U0/U2/Madd_C_cy<4>" (MUX) removed.
+                The signal "U0/U0/U2/Madd_C_cy<4>" is sourceless and has been removed.
+               Sourceless block "U0/U0/U2/Madd_C_xor<4>" (XOR) removed.
+                The signal "U0/U0/sum1<4>" is sourceless and has been removed.
+                 Sourceless block "U0/U0/M1/Mmux_O271" (ROM) removed.
+                  The signal "U0/U0/next_pc<4>" is sourceless and has been removed.
+                   Sourceless block "U0/U0/PC_4" (FF) removed.
+                    The signal "U0/U0/PC<4>" is sourceless and has been removed.
+                     Sourceless block "U0/U0/U1/Madd_C_cy<4>_rt" (ROM) removed.
+                      The signal "U0/U0/U1/Madd_C_cy<4>_rt" is sourceless and has been removed.
+         Sourceless block "U0/U0/U1/Madd_C_xor<3>" (XOR) removed.
+          The signal "U0/U0/sum0<3>" is sourceless and has been removed.
+           Sourceless block "U0/U0/U2/Madd_C_lut<3>" (ROM) removed.
+            The signal "U0/U0/U2/Madd_C_lut<3>" is sourceless and has been removed.
+             Sourceless block "U0/U0/U2/Madd_C_cy<3>" (MUX) removed.
+              The signal "U0/U0/U2/Madd_C_cy<3>" is sourceless and has been removed.
+             Sourceless block "U0/U0/U2/Madd_C_xor<3>" (XOR) removed.
+              The signal "U0/U0/sum1<3>" is sourceless and has been removed.
+               Sourceless block "U0/U0/M1/Mmux_O261" (ROM) removed.
+                The signal "U0/U0/next_pc<3>" is sourceless and has been removed.
+                 Sourceless block "U0/U0/PC_3" (FF) removed.
+                  The signal "U0/U0/PC<3>" is sourceless and has been removed.
+                   Sourceless block "U0/U0/U1/Madd_C_cy<3>_rt" (ROM) removed.
+                    The signal "U0/U0/U1/Madd_C_cy<3>_rt" is sourceless and has been removed.
+       Sourceless block "U0/U0/U1/Madd_C_xor<2>" (XOR) removed.
+        The signal "U0/U0/sum0<2>" is sourceless and has been removed.
+         Sourceless block "U0/U0/U2/Madd_C_lut<2>" (ROM) removed.
+          The signal "U0/U0/U2/Madd_C_lut<2>" is sourceless and has been removed.
+           Sourceless block "U0/U0/U2/Madd_C_cy<2>" (MUX) removed.
+            The signal "U0/U0/U2/Madd_C_cy<2>" is sourceless and has been removed.
+           Sourceless block "U0/U0/U2/Madd_C_xor<2>" (XOR) removed.
+            The signal "U0/U0/sum1<2>" is sourceless and has been removed.
+             Sourceless block "U0/U0/M1/Mmux_O231" (ROM) removed.
+              The signal "U0/U0/next_pc<2>" is sourceless and has been removed.
+The signal "U1/N0" is sourceless and has been removed.
+The signal "U1/N1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "Reset_IBUF" is unused and has been removed.
+ Unused block "Reset_IBUF" (BUF) removed.
+  The signal "Reset" is unused and has been removed.
+   Unused block "Reset" (PAD) removed.
+The signal "Result<31>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<31>" (XOR) removed.
+  The signal "U0/U6/Mmux_Result5_rs_cy<30>" is unused and has been removed.
+   Unused block "U0/U6/Mmux_Result5_rs_cy<30>" (MUX) removed.
+    The signal "U0/U6/Mmux_Result5_rs_cy<29>" is unused and has been removed.
+     Unused block "U0/U6/Mmux_Result5_rs_cy<29>" (MUX) removed.
+      The signal "U0/U6/Mmux_Result5_rs_cy<28>" is unused and has been removed.
+       Unused block "U0/U6/Mmux_Result5_rs_cy<28>" (MUX) removed.
+        The signal "U0/U6/Mmux_Result5_rs_cy<27>" is unused and has been removed.
+         Unused block "U0/U6/Mmux_Result5_rs_cy<27>" (MUX) removed.
+          The signal "U0/U6/Mmux_Result5_rs_cy<26>" is unused and has been removed.
+           Unused block "U0/U6/Mmux_Result5_rs_cy<26>" (MUX) removed.
+            The signal "U0/U6/Mmux_Result5_rs_cy<25>" is unused and has been removed.
+             Unused block "U0/U6/Mmux_Result5_rs_cy<25>" (MUX) removed.
+              The signal "U0/U6/Mmux_Result5_rs_cy<24>" is unused and has been removed.
+               Unused block "U0/U6/Mmux_Result5_rs_cy<24>" (MUX) removed.
+                The signal "U0/U6/Mmux_Result5_rs_cy<23>" is unused and has been removed.
+                 Unused block "U0/U6/Mmux_Result5_rs_cy<23>" (MUX) removed.
+                  The signal "U0/U6/Mmux_Result5_rs_cy<22>" is unused and has been removed.
+                   Unused block "U0/U6/Mmux_Result5_rs_cy<22>" (MUX) removed.
+                    The signal "U0/U6/Mmux_Result5_rs_cy<21>" is unused and has been removed.
+                     Unused block "U0/U6/Mmux_Result5_rs_cy<21>" (MUX) removed.
+                      The signal "U0/U6/Mmux_Result5_rs_cy<20>" is unused and has been removed.
+                       Unused block "U0/U6/Mmux_Result5_rs_cy<20>" (MUX) removed.
+                        The signal "U0/U6/Mmux_Result5_rs_cy<19>" is unused and has been removed.
+                         Unused block "U0/U6/Mmux_Result5_rs_cy<19>" (MUX) removed.
+                          The signal "U0/U6/Mmux_Result5_rs_cy<18>" is unused and has been removed.
+                           Unused block "U0/U6/Mmux_Result5_rs_cy<18>" (MUX) removed.
+                            The signal "U0/U6/Mmux_Result5_rs_cy<17>" is unused and has been removed.
+                             Unused block "U0/U6/Mmux_Result5_rs_cy<17>" (MUX) removed.
+                              The signal "U0/U6/Mmux_Result5_rs_cy<16>" is unused and has been removed.
+                               Unused block "U0/U6/Mmux_Result5_rs_cy<16>" (MUX) removed.
+                                The signal "U0/U6/Mmux_Result5_rs_cy<15>" is unused and has been removed.
+                                 Unused block "U0/U6/Mmux_Result5_rs_cy<15>" (MUX) removed.
+                                  The signal "U0/U6/Mmux_Result5_rs_cy<14>" is unused and has been removed.
+                                   Unused block "U0/U6/Mmux_Result5_rs_cy<14>" (MUX) removed.
+                                    The signal "U0/U6/Mmux_Result5_rs_cy<13>" is unused and has been removed.
+                                     Unused block "U0/U6/Mmux_Result5_rs_cy<13>" (MUX) removed.
+                                      The signal "U0/U6/Mmux_Result5_rs_cy<12>" is unused and has been removed.
+                                       Unused block "U0/U6/Mmux_Result5_rs_cy<12>" (MUX) removed.
+                                        The signal "U0/U6/Mmux_Result5_rs_cy<11>" is unused and has been removed.
+                                         Unused block "U0/U6/Mmux_Result5_rs_cy<11>" (MUX) removed.
+                                          The signal "U0/U6/Mmux_Result5_rs_cy<10>" is unused and has been removed.
+                                           Unused block "U0/U6/Mmux_Result5_rs_cy<10>" (MUX) removed.
+                                            The signal "U0/U6/Mmux_Result5_rs_cy<9>" is unused and has been removed.
+                                             Unused block "U0/U6/Mmux_Result5_rs_cy<9>" (MUX) removed.
+                                              The signal "U0/U6/Mmux_Result5_rs_cy<8>" is unused and has been removed.
+                                               Unused block "U0/U6/Mmux_Result5_rs_cy<8>" (MUX) removed.
+                                                The signal "U0/U6/Mmux_Result5_rs_cy<7>" is unused and has been removed.
+                                                 Unused block "U0/U6/Mmux_Result5_rs_cy<7>" (MUX) removed.
+*The signal "U0/U6/Mmux_Result5_rs_cy<6>" is unused and has been removed.
+* Unused block "U0/U6/Mmux_Result5_rs_cy<6>" (MUX) removed.
+*  The signal "U0/U6/Mmux_Result5_rs_cy<5>" is unused and has been removed.
+*   Unused block "U0/U6/Mmux_Result5_rs_cy<5>" (MUX) removed.
+*    The signal "U0/U6/Mmux_Result5_rs_cy<4>" is unused and has been removed.
+*     Unused block "U0/U6/Mmux_Result5_rs_cy<4>" (MUX) removed.
+*      The signal "U0/U6/Mmux_Result5_rs_cy<3>" is unused and has been removed.
+*       Unused block "U0/U6/Mmux_Result5_rs_cy<3>" (MUX) removed.
+*        The signal "U0/U6/Mmux_Result5_rs_cy<2>" is unused and has been removed.
+*         Unused block "U0/U6/Mmux_Result5_rs_cy<2>" (MUX) removed.
+*          The signal "U0/U6/Mmux_Result5_rs_cy<1>" is unused and has been removed.
+*           Unused block "U0/U6/Mmux_Result5_rs_cy<1>" (MUX) removed.
+*            The signal "U0/U6/Mmux_Result5_rs_cy<0>" is unused and has been removed.
+*             Unused block "U0/U6/Mmux_Result5_rs_cy<0>" (MUX) removed.
+*              The signal "U0/U1/U1/ALU_op<2>" is unused and has been removed.
+*               Unused block "U0/U1/U1/ALU_op<2>_1" (ROM) removed.
+*                The signal "Inst<0>" is unused and has been removed.
+*                The signal "Inst<1>" is unused and has been removed.
+*                The signal "Inst<2>" is unused and has been removed.
+*                The signal "Inst<28>" is unused and has been removed.
+*                The signal "N2" is unused and has been removed.
+*                 Unused block "U0/U1/U1/ALU_op<2>_SW0" (ROM) removed.
+*                  The signal "Inst<27>" is unused and has been removed.
+*                  The signal "Inst<29>" is unused and has been removed.
+*                The signal "U0/U1/U0/n0000" is unused and has been removed.
+*                 Unused block "U0/U1/U0/out1" (ROM) removed.
+*                  The signal "Inst<30>" is unused and has been removed.
+*                  The signal "Inst<26>" is unused and has been removed.
+*                  The signal "Inst<31>" is unused and has been removed.
+*              The signal "U0/U6/Mmux_Result5_rs_A<0>" is unused and has been removed.
+*               Unused block "U0/U6/Mmux_Result5_A11" (ROM) removed.
+*                The signal "U0/U3/Rn1[4]_read_port_1_OUT<0>" is unused and has been removed.
+*                The signal "U0/U3/GND_11_o_GND_11_o_equal_1_o" is unused and has been removed.
+*                 Unused block "U0/U3/GND_11_o_GND_11_o_equal_1_o<4>1" (ROM) removed.
+*                  The signal "Inst<25>" is unused and has been removed.
+*                  The signal "Inst<24>" is unused and has been removed.
+*                  The signal "Inst<23>" is unused and has been removed.
+*                  The signal "Inst<22>" is unused and has been removed.
+*                  The signal "Inst<21>" is unused and has been removed.
+*                The signal "U0/ALU_B<0>" is unused and has been removed.
+*                 Unused block "U0/U5/Mmux_O11" (ROM) removed.
+*                  The signal "U0/U3/Rn2[4]_read_port_4_OUT<0>" is unused and has been removed.
+*                  The signal "U0/U3/GND_11_o_GND_11_o_equal_4_o<4>1" is unused and has been
+removed.
+*                   Unused block "U0/U3/GND_11_o_GND_11_o_equal_4_o<4>1_1" (ROM) removed.
+*                    The signal "Inst<20>" is unused and has been removed.
+*                    The signal "Inst<19>" is unused and has been removed.
+*                    The signal "Inst<18>" is unused and has been removed.
+*                    The signal "Inst<17>" is unused and has been removed.
+*                    The signal "Inst<16>" is unused and has been removed.
+*                The signal "U0/U1/U1/ALU_op<1>1_2" is unused and has been removed.
+*                 Unused block "U0/U1/U1/ALU_op<1>1_3" (ROM) removed.
+*                The signal "U0/U1/U1/ALU_op<0>11" is unused and has been removed.
+*                 Unused block "U0/U1/U1/ALU_op<0>1_2" (ROM) removed.
+*                The signal "U0/U1/U1/ALU_op<2>1" is unused and has been removed.
+*                 Unused block "U0/U1/U1/ALU_op<2>_2" (ROM) removed.
+*              The signal "U0/U6/Mmux_Result5_rs_lut<0>" is unused and has been removed.
+*               Unused block "U0/U6/Mmux_Result5_rs_lut<0>" (ROM) removed.
+*            The signal "U0/U6/Mmux_Result5_rs_A<1>" is unused and has been removed.
+*             Unused block "U0/U6/Mmux_Result5_A121" (ROM) removed.
+*              The signal "U0/U3/Rn1[4]_read_port_1_OUT<1>" is unused and has been removed.
+*              The signal "U0/ALU_B<1>" is unused and has been removed.
+*               Unused block "U0/U5/Mmux_O121" (ROM) removed.
+*                The signal "U0/U3/Rn2[4]_read_port_4_OUT<1>" is unused and has been removed.
+*            The signal "U0/U6/Mmux_Result5_rs_lut<1>" is unused and has been removed.
+*             Unused block "U0/U6/Mmux_Result5_rs_lut<1>" (ROM) removed.
+*          The signal "U0/U6/Mmux_Result5_rs_A<2>" is unused and has been removed.
+*           Unused block "U0/U6/Mmux_Result5_A231" (ROM) removed.
+*            The signal "U0/U3/Rn1[4]_read_port_1_OUT<2>" is unused and has been removed.
+*            The signal "U0/ALU_B<2>" is unused and has been removed.
+*             Unused block "U0/U5/Mmux_O231" (ROM) removed.
+*              The signal "U0/U3/Rn2[4]_read_port_4_OUT<2>" is unused and has been removed.
+*          The signal "U0/U6/Mmux_Result5_rs_lut<2>" is unused and has been removed.
+*           Unused block "U0/U6/Mmux_Result5_rs_lut<2>" (ROM) removed.
+*        The signal "U0/U6/Mmux_Result5_rs_A<3>" is unused and has been removed.
+*         Unused block "U0/U6/Mmux_Result5_A261" (ROM) removed.
+*          The signal "U0/U3/Rn1[4]_read_port_1_OUT<3>" is unused and has been removed.
+*          The signal "U0/ALU_B<3>" is unused and has been removed.
+*           Unused block "U0/U5/Mmux_O261" (ROM) removed.
+*            The signal "U0/U3/Rn2[4]_read_port_4_OUT<3>" is unused and has been removed.
+*            The signal "Inst<3>" is unused and has been removed.
+*        The signal "U0/U6/Mmux_Result5_rs_lut<3>" is unused and has been removed.
+*         Unused block "U0/U6/Mmux_Result5_rs_lut<3>" (ROM) removed.
+*      The signal "U0/U6/Mmux_Result5_rs_A<4>" is unused and has been removed.
+*       Unused block "U0/U6/Mmux_Result5_A271" (ROM) removed.
+*        The signal "U0/U3/Rn1[4]_read_port_1_OUT<4>" is unused and has been removed.
+*        The signal "U0/ALU_B<4>" is unused and has been removed.
+*         Unused block "U0/U5/Mmux_O271" (ROM) removed.
+*          The signal "U0/U3/Rn2[4]_read_port_4_OUT<4>" is unused and has been removed.
+*          The signal "Inst<4>" is unused and has been removed.
+*        The signal "U0/U1/U1/ALU_op<1>11" is unused and has been removed.
+*         Unused block "U0/U1/U1/ALU_op<1>1_2" (ROM) removed.
+*      The signal "U0/U6/Mmux_Result5_rs_lut<4>" is unused and has been removed.
+*       Unused block "U0/U6/Mmux_Result5_rs_lut<4>" (ROM) removed.
+*    The signal "U0/U6/Mmux_Result5_rs_A<5>" is unused and has been removed.
+*     Unused block "U0/U6/Mmux_Result5_A281" (ROM) removed.
+*      The signal "U0/U3/Rn1[4]_read_port_1_OUT<5>" is unused and has been removed.
+*      The signal "U0/ALU_B<5>" is unused and has been removed.
+*       Unused block "U0/U5/Mmux_O281" (ROM) removed.
+*        The signal "U0/U3/Rn2[4]_read_port_4_OUT<5>" is unused and has been removed.
+*        The signal "Inst<5>" is unused and has been removed.
+*    The signal "U0/U6/Mmux_Result5_rs_lut<5>" is unused and has been removed.
+*     Unused block "U0/U6/Mmux_Result5_rs_lut<5>" (ROM) removed.
+*  The signal "U0/U6/Mmux_Result5_rs_A<6>" is unused and has been removed.
+*   Unused block "U0/U6/Mmux_Result5_A291" (ROM) removed.
+*    The signal "U0/U3/Rn1[4]_read_port_1_OUT<6>" is unused and has been removed.
+*    The signal "U0/ALU_B<6>" is unused and has been removed.
+*     Unused block "U0/U5/Mmux_O291" (ROM) removed.
+*      The signal "U0/U3/Rn2[4]_read_port_4_OUT<6>" is unused and has been removed.
+*      The signal "Inst<6>" is unused and has been removed.
+*  The signal "U0/U6/Mmux_Result5_rs_lut<6>" is unused and has been removed.
+*   Unused block "U0/U6/Mmux_Result5_rs_lut<6>" (ROM) removed.
+*The signal "U0/U6/Mmux_Result5_rs_A<7>" is unused and has been removed.
+* Unused block "U0/U6/Mmux_Result5_A301" (ROM) removed.
+*  The signal "U0/U3/Rn1[4]_read_port_1_OUT<7>" is unused and has been removed.
+*  The signal "U0/ALU_B<7>" is unused and has been removed.
+*   Unused block "U0/U5/Mmux_O301" (ROM) removed.
+*    The signal "U0/U3/Rn2[4]_read_port_4_OUT<7>" is unused and has been removed.
+*    The signal "Inst<7>" is unused and has been removed.
+*The signal "U0/U6/Mmux_Result5_rs_lut<7>" is unused and has been removed.
+* Unused block "U0/U6/Mmux_Result5_rs_lut<7>" (ROM) removed.
+                                                The signal "U0/U6/Mmux_Result5_rs_A<8>" is unused and has been removed.
+                                                 Unused block "U0/U6/Mmux_Result5_A311" (ROM) removed.
+*The signal "U0/U3/Rn1[4]_read_port_1_OUT<8>" is unused and has been removed.
+*The signal "U0/ALU_B<8>" is unused and has been removed.
+* Unused block "U0/U5/Mmux_O311" (ROM) removed.
+*  The signal "U0/U3/Rn2[4]_read_port_4_OUT<8>" is unused and has been removed.
+*  The signal "Inst<8>" is unused and has been removed.
+                                                The signal "U0/U6/Mmux_Result5_rs_lut<8>" is unused and has been removed.
+                                                 Unused block "U0/U6/Mmux_Result5_rs_lut<8>" (ROM) removed.
+                                              The signal "U0/U6/Mmux_Result5_rs_A<9>" is unused and has been removed.
+                                               Unused block "U0/U6/Mmux_Result5_A321" (ROM) removed.
+                                                The signal "U0/U3/Rn1[4]_read_port_1_OUT<9>" is unused and has been removed.
+                                                The signal "U0/ALU_B<9>" is unused and has been removed.
+                                                 Unused block "U0/U5/Mmux_O321" (ROM) removed.
+*The signal "U0/U3/Rn2[4]_read_port_4_OUT<9>" is unused and has been removed.
+*The signal "Inst<9>" is unused and has been removed.
+                                                The signal "U0/U1/U1/ALU_op<0>1" is unused and has been removed.
+                                                 Unused block "U0/U1/U1/ALU_op<0>1_1" (ROM) removed.
+                                                The signal "U0/U1/U1/ALU_op<1>1" is unused and has been removed.
+                                                 Unused block "U0/U1/U1/ALU_op<1>1_1" (ROM) removed.
+                                              The signal "U0/U6/Mmux_Result5_rs_lut<9>" is unused and has been removed.
+                                               Unused block "U0/U6/Mmux_Result5_rs_lut<9>" (ROM) removed.
+                                            The signal "U0/U6/Mmux_Result5_rs_A<10>" is unused and has been removed.
+                                             Unused block "U0/U6/Mmux_Result5_A21" (ROM) removed.
+                                              The signal "U0/U3/Rn1[4]_read_port_1_OUT<10>" is unused and has been removed.
+                                              The signal "U0/ALU_B<10>" is unused and has been removed.
+                                               Unused block "U0/U5/Mmux_O21" (ROM) removed.
+                                                The signal "U0/U3/Rn2[4]_read_port_4_OUT<10>" is unused and has been removed.
+                                                The signal "Inst<10>" is unused and has been removed.
+                                            The signal "U0/U6/Mmux_Result5_rs_lut<10>" is unused and has been removed.
+                                             Unused block "U0/U6/Mmux_Result5_rs_lut<10>" (ROM) removed.
+                                          The signal "U0/U6/Mmux_Result5_rs_A<11>" is unused and has been removed.
+                                           Unused block "U0/U6/Mmux_Result5_A31" (ROM) removed.
+                                            The signal "U0/U3/Rn1[4]_read_port_1_OUT<11>" is unused and has been removed.
+                                            The signal "U0/ALU_B<11>" is unused and has been removed.
+                                             Unused block "U0/U5/Mmux_O31" (ROM) removed.
+                                              The signal "U0/U3/Rn2[4]_read_port_4_OUT<11>" is unused and has been removed.
+                                              The signal "Inst<11>" is unused and has been removed.
+                                          The signal "U0/U6/Mmux_Result5_rs_lut<11>" is unused and has been removed.
+                                           Unused block "U0/U6/Mmux_Result5_rs_lut<11>" (ROM) removed.
+                                        The signal "U0/U6/Mmux_Result5_rs_A<12>" is unused and has been removed.
+                                         Unused block "U0/U6/Mmux_Result5_A41" (ROM) removed.
+                                          The signal "U0/U3/Rn1[4]_read_port_1_OUT<12>" is unused and has been removed.
+                                          The signal "U0/ALU_B<12>" is unused and has been removed.
+                                           Unused block "U0/U5/Mmux_O41" (ROM) removed.
+                                            The signal "U0/U3/Rn2[4]_read_port_4_OUT<12>" is unused and has been removed.
+                                            The signal "Inst<12>" is unused and has been removed.
+                                        The signal "U0/U6/Mmux_Result5_rs_lut<12>" is unused and has been removed.
+                                         Unused block "U0/U6/Mmux_Result5_rs_lut<12>" (ROM) removed.
+                                      The signal "U0/U6/Mmux_Result5_rs_A<13>" is unused and has been removed.
+                                       Unused block "U0/U6/Mmux_Result5_A51" (ROM) removed.
+                                        The signal "U0/U3/Rn1[4]_read_port_1_OUT<13>" is unused and has been removed.
+                                        The signal "U0/ALU_B<13>" is unused and has been removed.
+                                         Unused block "U0/U5/Mmux_O51" (ROM) removed.
+                                          The signal "U0/U3/Rn2[4]_read_port_4_OUT<13>" is unused and has been removed.
+                                          The signal "Inst<13>" is unused and has been removed.
+                                      The signal "U0/U6/Mmux_Result5_rs_lut<13>" is unused and has been removed.
+                                       Unused block "U0/U6/Mmux_Result5_rs_lut<13>" (ROM) removed.
+                                    The signal "U0/U6/Mmux_Result5_rs_A<14>" is unused and has been removed.
+                                     Unused block "U0/U6/Mmux_Result5_A61" (ROM) removed.
+                                      The signal "U0/U3/Rn1[4]_read_port_1_OUT<14>" is unused and has been removed.
+                                      The signal "U0/ALU_B<14>" is unused and has been removed.
+                                       Unused block "U0/U5/Mmux_O61" (ROM) removed.
+                                        The signal "U0/U3/Rn2[4]_read_port_4_OUT<14>" is unused and has been removed.
+                                        The signal "Inst<14>" is unused and has been removed.
+                                    The signal "U0/U6/Mmux_Result5_rs_lut<14>" is unused and has been removed.
+                                     Unused block "U0/U6/Mmux_Result5_rs_lut<14>" (ROM) removed.
+                                  The signal "U0/U6/Mmux_Result5_rs_A<15>" is unused and has been removed.
+                                   Unused block "U0/U6/Mmux_Result5_A71" (ROM) removed.
+                                    The signal "U0/U3/Rn1[4]_read_port_1_OUT<15>" is unused and has been removed.
+                                    The signal "U0/ALU_B<15>" is unused and has been removed.
+                                     Unused block "U0/U5/Mmux_O71" (ROM) removed.
+                                      The signal "U0/U3/Rn2[4]_read_port_4_OUT<15>" is unused and has been removed.
+                                      The signal "Inst<15>" is unused and has been removed.
+                                      The signal "U0/U3/GND_11_o_GND_11_o_equal_4_o" is unused and has been removed.
+                                       Unused block "U0/U3/GND_11_o_GND_11_o_equal_4_o<4>1" (ROM) removed.
+                                  The signal "U0/U6/Mmux_Result5_rs_lut<15>" is unused and has been removed.
+                                   Unused block "U0/U6/Mmux_Result5_rs_lut<15>" (ROM) removed.
+                                The signal "U0/U6/Mmux_Result5_rs_A<16>" is unused and has been removed.
+                                 Unused block "U0/U6/Mmux_Result5_A81" (ROM) removed.
+                                  The signal "U0/A<16>" is unused and has been removed.
+                                   Unused block "U0/U3/Mmux_A81" (ROM) removed.
+                                    The signal "U0/U3/Rn1[4]_read_port_1_OUT<16>" is unused and has been removed.
+                                  The signal "U0/ALU_B<16>" is unused and has been removed.
+                                   Unused block "U0/U5/Mmux_O81" (ROM) removed.
+                                    The signal "U0/U3/Rn2[4]_read_port_4_OUT<16>" is unused and has been removed.
+                                The signal "U0/U6/Mmux_Result5_rs_lut<16>" is unused and has been removed.
+                                 Unused block "U0/U6/Mmux_Result5_rs_lut<16>" (ROM) removed.
+                              The signal "U0/U6/Mmux_Result5_rs_A<17>" is unused and has been removed.
+                               Unused block "U0/U6/Mmux_Result5_A91" (ROM) removed.
+                                The signal "U0/A<17>" is unused and has been removed.
+                                 Unused block "U0/U3/Mmux_A91" (ROM) removed.
+                                  The signal "U0/U3/Rn1[4]_read_port_1_OUT<17>" is unused and has been removed.
+                                The signal "U0/ALU_B<17>" is unused and has been removed.
+                                 Unused block "U0/U5/Mmux_O91" (ROM) removed.
+                                  The signal "U0/U3/Rn2[4]_read_port_4_OUT<17>" is unused and has been removed.
+                              The signal "U0/U6/Mmux_Result5_rs_lut<17>" is unused and has been removed.
+                               Unused block "U0/U6/Mmux_Result5_rs_lut<17>" (ROM) removed.
+                            The signal "U0/U6/Mmux_Result5_rs_A<18>" is unused and has been removed.
+                             Unused block "U0/U6/Mmux_Result5_A101" (ROM) removed.
+                              The signal "U0/A<18>" is unused and has been removed.
+                               Unused block "U0/U3/Mmux_A101" (ROM) removed.
+                                The signal "U0/U3/Rn1[4]_read_port_1_OUT<18>" is unused and has been removed.
+                              The signal "U0/ALU_B<18>" is unused and has been removed.
+                               Unused block "U0/U5/Mmux_O101" (ROM) removed.
+                                The signal "U0/U3/Rn2[4]_read_port_4_OUT<18>" is unused and has been removed.
+                            The signal "U0/U6/Mmux_Result5_rs_lut<18>" is unused and has been removed.
+                             Unused block "U0/U6/Mmux_Result5_rs_lut<18>" (ROM) removed.
+                              The signal "U0/ALU_op<1>" is unused and has been removed.
+                               Unused block "U0/U1/U1/ALU_op<1>1" (ROM) removed.
+                          The signal "U0/U6/Mmux_Result5_rs_A<19>" is unused and has been removed.
+                           Unused block "U0/U6/Mmux_Result5_A111" (ROM) removed.
+                            The signal "U0/A<19>" is unused and has been removed.
+                             Unused block "U0/U3/Mmux_A111" (ROM) removed.
+                              The signal "U0/U3/Rn1[4]_read_port_1_OUT<19>" is unused and has been removed.
+                            The signal "U0/ALU_B<19>" is unused and has been removed.
+                             Unused block "U0/U5/Mmux_O111" (ROM) removed.
+                              The signal "U0/U3/Rn2[4]_read_port_4_OUT<19>" is unused and has been removed.
+                          The signal "U0/U6/Mmux_Result5_rs_lut<19>" is unused and has been removed.
+                           Unused block "U0/U6/Mmux_Result5_rs_lut<19>" (ROM) removed.
+                        The signal "U0/U6/Mmux_Result5_rs_A<20>" is unused and has been removed.
+                         Unused block "U0/U6/Mmux_Result5_A131" (ROM) removed.
+                          The signal "U0/A<20>" is unused and has been removed.
+                           Unused block "U0/U3/Mmux_A131" (ROM) removed.
+                            The signal "U0/U3/Rn1[4]_read_port_1_OUT<20>" is unused and has been removed.
+                          The signal "U0/ALU_B<20>" is unused and has been removed.
+                           Unused block "U0/U5/Mmux_O131" (ROM) removed.
+                            The signal "U0/U3/Rn2[4]_read_port_4_OUT<20>" is unused and has been removed.
+                          The signal "U0/ALU_op<0>" is unused and has been removed.
+                           Unused block "U0/U1/U1/ALU_op<0>1" (ROM) removed.
+                          The signal "U0/ALU_op<2>" is unused and has been removed.
+                           Unused block "U0/U1/U1/ALU_op<2>" (ROM) removed.
+                        The signal "U0/U6/Mmux_Result5_rs_lut<20>" is unused and has been removed.
+                         Unused block "U0/U6/Mmux_Result5_rs_lut<20>" (ROM) removed.
+                      The signal "U0/U6/Mmux_Result5_rs_A<21>" is unused and has been removed.
+                       Unused block "U0/U6/Mmux_Result5_A141" (ROM) removed.
+                        The signal "U0/A<21>" is unused and has been removed.
+                         Unused block "U0/U3/Mmux_A141" (ROM) removed.
+                          The signal "U0/U3/Rn1[4]_read_port_1_OUT<21>" is unused and has been removed.
+                        The signal "U0/ALU_B<21>" is unused and has been removed.
+                         Unused block "U0/U5/Mmux_O141" (ROM) removed.
+                          The signal "U0/U3/Rn2[4]_read_port_4_OUT<21>" is unused and has been removed.
+                      The signal "U0/U6/Mmux_Result5_rs_lut<21>" is unused and has been removed.
+                       Unused block "U0/U6/Mmux_Result5_rs_lut<21>" (ROM) removed.
+                    The signal "U0/U6/Mmux_Result5_rs_A<22>" is unused and has been removed.
+                     Unused block "U0/U6/Mmux_Result5_A151" (ROM) removed.
+                      The signal "U0/A<22>" is unused and has been removed.
+                       Unused block "U0/U3/Mmux_A151" (ROM) removed.
+                        The signal "U0/U3/Rn1[4]_read_port_1_OUT<22>" is unused and has been removed.
+                      The signal "U0/ALU_B<22>" is unused and has been removed.
+                       Unused block "U0/U5/Mmux_O151" (ROM) removed.
+                        The signal "U0/U3/Rn2[4]_read_port_4_OUT<22>" is unused and has been removed.
+                    The signal "U0/U6/Mmux_Result5_rs_lut<22>" is unused and has been removed.
+                     Unused block "U0/U6/Mmux_Result5_rs_lut<22>" (ROM) removed.
+                  The signal "U0/U6/Mmux_Result5_rs_A<23>" is unused and has been removed.
+                   Unused block "U0/U6/Mmux_Result5_A161" (ROM) removed.
+                    The signal "U0/A<23>" is unused and has been removed.
+                     Unused block "U0/U3/Mmux_A161" (ROM) removed.
+                      The signal "U0/U3/Rn1[4]_read_port_1_OUT<23>" is unused and has been removed.
+                    The signal "U0/ALU_B<23>" is unused and has been removed.
+                     Unused block "U0/U5/Mmux_O161" (ROM) removed.
+                      The signal "U0/U3/Rn2[4]_read_port_4_OUT<23>" is unused and has been removed.
+                  The signal "U0/U6/Mmux_Result5_rs_lut<23>" is unused and has been removed.
+                   Unused block "U0/U6/Mmux_Result5_rs_lut<23>" (ROM) removed.
+                The signal "U0/U6/Mmux_Result5_rs_A<24>" is unused and has been removed.
+                 Unused block "U0/U6/Mmux_Result5_A171" (ROM) removed.
+                  The signal "U0/A<24>" is unused and has been removed.
+                   Unused block "U0/U3/Mmux_A171" (ROM) removed.
+                    The signal "U0/U3/Rn1[4]_read_port_1_OUT<24>" is unused and has been removed.
+                  The signal "U0/ALU_B<24>" is unused and has been removed.
+                   Unused block "U0/U5/Mmux_O171" (ROM) removed.
+                    The signal "U0/U3/Rn2[4]_read_port_4_OUT<24>" is unused and has been removed.
+                The signal "U0/U6/Mmux_Result5_rs_lut<24>" is unused and has been removed.
+                 Unused block "U0/U6/Mmux_Result5_rs_lut<24>" (ROM) removed.
+              The signal "U0/U6/Mmux_Result5_rs_A<25>" is unused and has been removed.
+               Unused block "U0/U6/Mmux_Result5_A181" (ROM) removed.
+                The signal "U0/A<25>" is unused and has been removed.
+                 Unused block "U0/U3/Mmux_A181" (ROM) removed.
+                  The signal "U0/U3/Rn1[4]_read_port_1_OUT<25>" is unused and has been removed.
+                The signal "U0/ALU_B<25>" is unused and has been removed.
+                 Unused block "U0/U5/Mmux_O181" (ROM) removed.
+                  The signal "U0/U3/Rn2[4]_read_port_4_OUT<25>" is unused and has been removed.
+              The signal "U0/U6/Mmux_Result5_rs_lut<25>" is unused and has been removed.
+               Unused block "U0/U6/Mmux_Result5_rs_lut<25>" (ROM) removed.
+            The signal "U0/U6/Mmux_Result5_rs_A<26>" is unused and has been removed.
+             Unused block "U0/U6/Mmux_Result5_A191" (ROM) removed.
+              The signal "U0/A<26>" is unused and has been removed.
+               Unused block "U0/U3/Mmux_A191" (ROM) removed.
+                The signal "U0/U3/Rn1[4]_read_port_1_OUT<26>" is unused and has been removed.
+              The signal "U0/ALU_B<26>" is unused and has been removed.
+               Unused block "U0/U5/Mmux_O191" (ROM) removed.
+                The signal "U0/U3/Rn2[4]_read_port_4_OUT<26>" is unused and has been removed.
+            The signal "U0/U6/Mmux_Result5_rs_lut<26>" is unused and has been removed.
+             Unused block "U0/U6/Mmux_Result5_rs_lut<26>" (ROM) removed.
+          The signal "U0/U6/Mmux_Result5_rs_A<27>" is unused and has been removed.
+           Unused block "U0/U6/Mmux_Result5_A201" (ROM) removed.
+            The signal "U0/A<27>" is unused and has been removed.
+             Unused block "U0/U3/Mmux_A201" (ROM) removed.
+              The signal "U0/U3/Rn1[4]_read_port_1_OUT<27>" is unused and has been removed.
+            The signal "U0/ALU_B<27>" is unused and has been removed.
+             Unused block "U0/U5/Mmux_O201" (ROM) removed.
+              The signal "U0/U3/Rn2[4]_read_port_4_OUT<27>" is unused and has been removed.
+          The signal "U0/U6/Mmux_Result5_rs_lut<27>" is unused and has been removed.
+           Unused block "U0/U6/Mmux_Result5_rs_lut<27>" (ROM) removed.
+        The signal "U0/U6/Mmux_Result5_rs_A<28>" is unused and has been removed.
+         Unused block "U0/U6/Mmux_Result5_A211" (ROM) removed.
+          The signal "U0/A<28>" is unused and has been removed.
+           Unused block "U0/U3/Mmux_A211" (ROM) removed.
+            The signal "U0/U3/Rn1[4]_read_port_1_OUT<28>" is unused and has been removed.
+          The signal "U0/ALU_B<28>" is unused and has been removed.
+           Unused block "U0/U5/Mmux_O211" (ROM) removed.
+            The signal "U0/U3/Rn2[4]_read_port_4_OUT<28>" is unused and has been removed.
+        The signal "U0/U6/Mmux_Result5_rs_lut<28>" is unused and has been removed.
+         Unused block "U0/U6/Mmux_Result5_rs_lut<28>" (ROM) removed.
+      The signal "U0/U6/Mmux_Result5_rs_A<29>" is unused and has been removed.
+       Unused block "U0/U6/Mmux_Result5_A221" (ROM) removed.
+        The signal "U0/A<29>" is unused and has been removed.
+         Unused block "U0/U3/Mmux_A221" (ROM) removed.
+          The signal "U0/U3/Rn1[4]_read_port_1_OUT<29>" is unused and has been removed.
+        The signal "U0/ALU_B<29>" is unused and has been removed.
+         Unused block "U0/U5/Mmux_O221" (ROM) removed.
+          The signal "U0/U3/Rn2[4]_read_port_4_OUT<29>" is unused and has been removed.
+      The signal "U0/U6/Mmux_Result5_rs_lut<29>" is unused and has been removed.
+       Unused block "U0/U6/Mmux_Result5_rs_lut<29>" (ROM) removed.
+    The signal "U0/U6/Mmux_Result5_rs_A<30>" is unused and has been removed.
+     Unused block "U0/U6/Mmux_Result5_A241" (ROM) removed.
+      The signal "U0/A<30>" is unused and has been removed.
+       Unused block "U0/U3/Mmux_A241" (ROM) removed.
+        The signal "U0/U3/Rn1[4]_read_port_1_OUT<30>" is unused and has been removed.
+      The signal "U0/ALU_B<30>" is unused and has been removed.
+       Unused block "U0/U5/Mmux_O241" (ROM) removed.
+        The signal "U0/U3/Rn2[4]_read_port_4_OUT<30>" is unused and has been removed.
+    The signal "U0/U6/Mmux_Result5_rs_lut<30>" is unused and has been removed.
+     Unused block "U0/U6/Mmux_Result5_rs_lut<30>" (ROM) removed.
+  The signal "U0/U6/Mmux_Result5_rs_lut<31>" is unused and has been removed.
+   Unused block "U0/U6/Mmux_Result5_rs_lut<31>" (ROM) removed.
+    The signal "U0/A<31>" is unused and has been removed.
+     Unused block "U0/U3/Mmux_A251" (ROM) removed.
+      The signal "U0/U3/Rn1[4]_read_port_1_OUT<31>" is unused and has been removed.
+    The signal "U0/ALU_B<31>" is unused and has been removed.
+     Unused block "U0/U5/Mmux_O251" (ROM) removed.
+      The signal "U0/U3/Rn2[4]_read_port_4_OUT<31>" is unused and has been removed.
+The signal "Result<30>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<30>" (XOR) removed.
+The signal "Result<29>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<29>" (XOR) removed.
+The signal "Result<28>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<28>" (XOR) removed.
+The signal "Result<27>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<27>" (XOR) removed.
+The signal "Result<26>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<26>" (XOR) removed.
+The signal "Result<25>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<25>" (XOR) removed.
+The signal "Result<24>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<24>" (XOR) removed.
+The signal "Result<23>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<23>" (XOR) removed.
+The signal "Result<22>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<22>" (XOR) removed.
+The signal "Result<21>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<21>" (XOR) removed.
+The signal "Result<20>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<20>" (XOR) removed.
+The signal "Result<19>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<19>" (XOR) removed.
+The signal "Result<18>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<18>" (XOR) removed.
+The signal "Result<17>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<17>" (XOR) removed.
+The signal "Result<16>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<16>" (XOR) removed.
+The signal "Result<15>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<15>" (XOR) removed.
+The signal "Result<14>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<14>" (XOR) removed.
+The signal "Result<13>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<13>" (XOR) removed.
+The signal "Result<12>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<12>" (XOR) removed.
+The signal "Result<11>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<11>" (XOR) removed.
+The signal "Result<10>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<10>" (XOR) removed.
+The signal "Result<9>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<9>" (XOR) removed.
+The signal "Result<8>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<8>" (XOR) removed.
+The signal "Result<7>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<7>" (XOR) removed.
+The signal "Result<6>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<6>" (XOR) removed.
+The signal "Result<5>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<5>" (XOR) removed.
+The signal "Result<4>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<4>" (XOR) removed.
+The signal "Result<3>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<3>" (XOR) removed.
+The signal "Result<2>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<2>" (XOR) removed.
+The signal "Result<1>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<1>" (XOR) removed.
+The signal "Result<0>" is unused and has been removed.
+ Unused block "U0/U6/Mmux_Result5_rs_xor<0>" (XOR) removed.
+The signal "MemWrite" is unused and has been removed.
+ Unused block "U0/U1/U0/i_sw1" (ROM) removed.
+The signal "N0" is unused and has been removed.
+ Unused block "XST_GND" (ZERO) removed.
+The signal "N1" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "U0/Wn<0>" is unused and has been removed.
+ Unused block "U0/U2/Mmux_O11" (ROM) removed.
+The signal "U0/Wn<1>" is unused and has been removed.
+ Unused block "U0/U2/Mmux_O21" (ROM) removed.
+The signal "U0/Wn<2>" is unused and has been removed.
+ Unused block "U0/U2/Mmux_O31" (ROM) removed.
+The signal "U0/Wn<3>" is unused and has been removed.
+ Unused block "U0/U2/Mmux_O41" (ROM) removed.
+The signal "U0/Wn<4>" is unused and has been removed.
+ Unused block "U0/U2/Mmux_O51" (ROM) removed.
+The signal "U0/U3/Write_GND_11_o_AND_15_o" is unused and has been removed.
+ Unused block "U0/U3/Write_GND_11_o_AND_15_o" (ROM) removed.
+  The signal "N4" is unused and has been removed.
+   Unused block "U0/U3/Write_GND_11_o_AND_15_o_SW0" (ROM) removed.
+The signal "U0/U0/Reset_inv" is unused and has been removed.
+ Unused block "U0/U0/Reset_inv1_INV_0" (BUF) removed.
+The signal "U0/U0/sel" is unused and has been removed.
+ Unused block "U0/U0/sel7" (ROM) removed.
+  The signal "U0/U0/sel1" is unused and has been removed.
+   Unused block "U0/U0/sel1" (ROM) removed.
+  The signal "N6" is unused and has been removed.
+   Unused block "U0/U0/sel2_SW0" (ROM) removed.
+  The signal "U0/U0/sel6" is unused and has been removed.
+   Unused block "U0/U0/sel6" (ROM) removed.
+  The signal "U0/U0/sel4" is unused and has been removed.
+   Unused block "U0/U0/sel4" (ROM) removed.
+  The signal "U0/U0/sel3" is unused and has been removed.
+   Unused block "U0/U0/sel3" (ROM) removed.
+  The signal "U0/U0/sel5" is unused and has been removed.
+   Unused block "U0/U0/sel5" (ROM) removed.
+The signal "Clock" is unused and has been removed.
+ Unused block "Clock" (PAD) removed.
+The signal "U0/U0/sel7" is unused and has been removed.
+ Unused block "U0/U0/sel7_1" (ROM) removed.
+Unused block "Clock_BUFGP/IBUFG" (CKBUF) removed.
+Unused block "U0/U3/Mram_Register11" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register12" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register13" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register14" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register15" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register161" (RAM32X1D) removed.
+Unused block "U0/U3/Mram_Register162" (RAM32X1D) removed.
+Unused block "U0/U3/Mram_Register2" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register3" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register4" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register5" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register6" (RAM32M) removed.
+Unused block "U0/U3/Mram_Register71" (RAM32X1D) removed.
+Unused block "U0/U3/Mram_Register72" (RAM32X1D) removed.
+Unused block
+"U1/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/vali
+d.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram" (RAMB16BWER)
+removed.
+Unused block
+"U1/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/vali
+d.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram" (RAMB16BWER)
+removed.
+Unused block "U1/XST_GND" (ZERO) removed.
+Unused block "U1/XST_VCC" (ONE) removed.

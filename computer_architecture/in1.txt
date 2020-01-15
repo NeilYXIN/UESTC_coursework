@@ -1,0 +1,8 @@
+add r3,r1,r2
+add r5,r3,r4
+load r7,5(r5)
+add r8,r7,r3
+add r9,r5,r4
+jump 0
+add r1,r1,r2
+add r3,r3,r4

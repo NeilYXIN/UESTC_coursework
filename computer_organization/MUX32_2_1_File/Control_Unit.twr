@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml Control_Unit.twx Control_Unit.ncd -o Control_Unit.twr
+Control_Unit.pcf
+
+Design file:              Control_Unit.ncd
+Physical constraint file: Control_Unit.pcf
+Device,package,speed:     xc6slx45,csg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+func<0>        |ALU_op<2>      |    7.858|
+func<1>        |ALU_op<0>      |    6.616|
+func<1>        |ALU_op<1>      |    6.503|
+func<1>        |ALU_op<2>      |    7.288|
+func<2>        |ALU_op<0>      |    7.236|
+func<2>        |ALU_op<1>      |    7.123|
+func<2>        |ALU_op<2>      |    7.968|
+op<0>          |ALU_op<0>      |    7.136|
+op<0>          |ALU_op<1>      |    7.023|
+op<0>          |ALU_op<2>      |    7.168|
+op<0>          |RegDst         |    6.340|
+op<0>          |RegWrite       |    6.919|
+op<1>          |ALU_op<0>      |    7.471|
+op<1>          |ALU_op<1>      |    7.358|
+op<1>          |ALU_op<2>      |    7.503|
+op<1>          |Branch         |    6.773|
+op<1>          |RegDst         |    6.713|
+op<1>          |RegWrite       |    6.960|
+op<2>          |ALUSrc         |    5.887|
+op<2>          |ALU_op<0>      |    6.515|
+op<2>          |ALU_op<1>      |    6.402|
+op<2>          |ALU_op<2>      |    6.667|
+op<2>          |Branch         |    6.556|
+op<2>          |RegDst         |    6.711|
+op<2>          |RegWrite       |    6.689|
+op<3>          |ALUSrc         |    6.355|
+op<3>          |ALU_op<0>      |    7.611|
+op<3>          |ALU_op<1>      |    7.498|
+op<3>          |ALU_op<2>      |    7.643|
+op<3>          |MemRead        |    6.923|
+op<3>          |MemWrite       |    7.278|
+op<3>          |MemtoReg       |    7.129|
+op<3>          |RegDst         |    7.102|
+op<3>          |RegWrite       |    6.838|
+op<4>          |ALU_op<0>      |    7.315|
+op<4>          |ALU_op<1>      |    7.202|
+op<4>          |ALU_op<2>      |    7.347|
+op<4>          |RegDst         |    6.503|
+op<4>          |RegWrite       |    6.519|
+op<5>          |ALUSrc         |    6.370|
+op<5>          |ALU_op<0>      |    7.548|
+op<5>          |ALU_op<1>      |    7.435|
+op<5>          |ALU_op<2>      |    7.580|
+op<5>          |MemRead        |    6.655|
+op<5>          |MemWrite       |    7.010|
+op<5>          |MemtoReg       |    6.861|
+op<5>          |RegDst         |    6.539|
+op<5>          |RegWrite       |    6.713|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Nov 27 20:54:47 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 167 MB
+
+
+

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1/Sign_Extender.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1/Sign_Extender.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1_File/Sign_Extender.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1_File/Sign_Extender.syr" 

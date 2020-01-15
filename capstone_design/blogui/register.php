@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>注册</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <style type="text/css">
+		    body {
+			    padding-top: 60px;
+			    padding-bottom: 40px;
+		    }
+
+		    textarea {
+			    width: 100%;
+			    display: block;
+		    }
+
+		    .form-register input {
+                margin-bottom: 20px;
+            }
+
+
+		    @media (max-width: 980px) {
+			    div#main-container {
+				    padding: 0px;
+			    }
+		    }
+
+		    @media (max-width: 980px) {
+			    /* Enable use of floated navbar text */
+			    .navbar-text.pull-right {
+				    float: none;
+				    padding-left: 5px;
+				    padding-right: 5px;
+			    }
+		    }
+	    </style>
+    </head>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+        <a class="navbar-brand" href="login.php">登陆</a>
+			</div>
+		</div>
+	</nav>
+
+    </head>
+
+    <div class="container">
+        <form action="registercheck.php" class="form-register" method="post">
+	        <input class="form-control" type="text" name="userid" placeholder="用户名"/>
+            <input class="form-control" type="password" name="password" placeholder="密码"/>
+            <input class="form-control" type="password" name="confirm" placeholder="确认密码"/>
+            <input class="form-control" type="int" name="age" placeholder="年龄"/>
+            <input class="form-control btn btn-primary" type="Submit" name="Submit" value="注册"/>
+        </form>
+    </div>
+</html>

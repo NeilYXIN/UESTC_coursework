@@ -1,0 +1,78 @@
+Microsoft (R) Macro Assembler Version 5.00                  6/16/17 10:04:47
+TABLE       LOOKUP                                          Page     1-1
+
+
+				 
+				 
+				      TITLE   TABLE       LOOKUP 
+ 0000				DATA      SEGMENT 
+ 0000  51 4E 5A 40 55 4C 5D	TABLE    DB     81, 78, 90, 64, 85, 76, 93, 82,
+				 57, 80 
+       52 39 50			
+ 000A  49 3E 57 4D 4A 56 5F	                 DB     73, 62, 87, 77, 74, 86,
+				 95, 91, 82, 71 
+       5B 52 47			
+ 0014  08			NUM       DB      8 
+ 0015  ??			MATH     DB     ? 
+ 0016				DATA      ENDS 
+				 
+ 0000				STACK1  SEGMENT  PARA  STACK 
+ 0000  0020[			                 DW   20H    DUP(0) 
+	   0000			
+			 ]	
+				
+ 0040				STACK1  ENDS  
+				 
+				 
+ 0000				COSEG    SEGMENT 
+				                 ASSUME  CS:COSEG,DS:DATA,SS:ST
+				ACK1 
+ 0000  B8 ---- R		START:  MOV   AX,DATA  
+ 0003  8E D8			                MOV    DS,AX       
+ 0005  BB 0000 R		                MOV    BX,OFFSET  TABLE     
+				            
+ 0008  A0 0014 R		                MOV    AL,NUM           
+ 000B  FE C8			                DEC     AL  
+ 000D  D7			XLAT TABLE                     
+				 
+				 
+ 000E  A2 0015 R		                MOV   MATH,AL      
+ 0011  B4 4C			                MOV   AH,4CH             
+ 0013  CD 21			                INT      21H 
+ 0015				COSEG  ENDS 
+				                END   START 
+Microsoft (R) Macro Assembler Version 5.00                  6/16/17 10:04:47
+TABLE       LOOKUP                                          Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+COSEG  . . . . . . . . . . . . .  	0015	PARA	NONE	
+DATA . . . . . . . . . . . . . .  	0016	PARA	NONE	
+STACK1 . . . . . . . . . . . . .  	0040	PARA	STACK	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+MATH . . . . . . . . . . . . . .  	L BYTE	0015	DATA
+
+NUM  . . . . . . . . . . . . . .  	L BYTE	0014	DATA
+
+START  . . . . . . . . . . . . .  	L NEAR	0000	COSEG
+
+TABLE  . . . . . . . . . . . . .  	L BYTE	0000	DATA
+
+@FILENAME  . . . . . . . . . . .  	TEXT  1_1		
+
+
+     31 Source  Lines
+     31 Total   Lines
+      9 Symbols
+
+  51184 + 465360 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

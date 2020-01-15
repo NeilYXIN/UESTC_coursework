@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/MUX32_2_1/Control.xst" -ofn "C:/MUX32_2_1/Control.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1/Control.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1/Control.syr" 
+xst -intstyle ise -ifn "C:/Users/yx654/Desktop/MUX32_2_1_File/Control.xst" -ofn "C:/Users/yx654/Desktop/MUX32_2_1_File/Control.syr" 

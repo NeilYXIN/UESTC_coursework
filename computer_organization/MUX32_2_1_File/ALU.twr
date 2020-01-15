@@ -1,0 +1,1270 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf
+
+Design file:              ALU.ncd
+Physical constraint file: ALU.pcf
+Device,package,speed:     xc6slx45,csg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+----------------+---------------+---------+
+Source Pad      |Destination Pad|  Delay  |
+----------------+---------------+---------+
+A<0>            |Result<0>      |   10.015|
+A<0>            |Result<1>      |   10.107|
+A<0>            |Result<2>      |   10.189|
+A<0>            |Result<3>      |   10.510|
+A<0>            |Result<4>      |   10.495|
+A<0>            |Result<5>      |   10.349|
+A<0>            |Result<6>      |   10.347|
+A<0>            |Result<7>      |   10.984|
+A<0>            |Result<8>      |   10.733|
+A<0>            |Result<9>      |   10.893|
+A<0>            |Result<10>     |   10.676|
+A<0>            |Result<11>     |   10.922|
+A<0>            |Result<12>     |   10.723|
+A<0>            |Result<13>     |   11.191|
+A<0>            |Result<14>     |   10.963|
+A<0>            |Result<15>     |   11.361|
+A<0>            |Result<16>     |   11.009|
+A<0>            |Result<17>     |   11.640|
+A<0>            |Result<18>     |   11.238|
+A<0>            |Result<19>     |   11.554|
+A<0>            |Result<20>     |   11.678|
+A<0>            |Result<21>     |   11.831|
+A<0>            |Result<22>     |   11.538|
+A<0>            |Result<23>     |   12.049|
+A<0>            |Result<24>     |   11.807|
+A<0>            |Result<25>     |   12.253|
+A<0>            |Result<26>     |   11.868|
+A<0>            |Result<27>     |   12.140|
+A<0>            |Result<28>     |   12.199|
+A<0>            |Result<29>     |   12.307|
+A<0>            |Result<30>     |   11.808|
+A<0>            |Result<31>     |   12.447|
+A<0>            |Zero           |   14.485|
+A<1>            |Result<1>      |   10.015|
+A<1>            |Result<2>      |   10.152|
+A<1>            |Result<3>      |   10.489|
+A<1>            |Result<4>      |   10.463|
+A<1>            |Result<5>      |   10.317|
+A<1>            |Result<6>      |   10.315|
+A<1>            |Result<7>      |   10.952|
+A<1>            |Result<8>      |   10.701|
+A<1>            |Result<9>      |   10.861|
+A<1>            |Result<10>     |   10.644|
+A<1>            |Result<11>     |   10.890|
+A<1>            |Result<12>     |   10.691|
+A<1>            |Result<13>     |   11.159|
+A<1>            |Result<14>     |   10.931|
+A<1>            |Result<15>     |   11.329|
+A<1>            |Result<16>     |   10.977|
+A<1>            |Result<17>     |   11.608|
+A<1>            |Result<18>     |   11.206|
+A<1>            |Result<19>     |   11.522|
+A<1>            |Result<20>     |   11.646|
+A<1>            |Result<21>     |   11.799|
+A<1>            |Result<22>     |   11.506|
+A<1>            |Result<23>     |   12.017|
+A<1>            |Result<24>     |   11.775|
+A<1>            |Result<25>     |   12.221|
+A<1>            |Result<26>     |   11.836|
+A<1>            |Result<27>     |   12.108|
+A<1>            |Result<28>     |   12.167|
+A<1>            |Result<29>     |   12.275|
+A<1>            |Result<30>     |   11.776|
+A<1>            |Result<31>     |   12.415|
+A<1>            |Zero           |   14.448|
+A<2>            |Result<2>      |    9.769|
+A<2>            |Result<3>      |   10.123|
+A<2>            |Result<4>      |   10.093|
+A<2>            |Result<5>      |    9.947|
+A<2>            |Result<6>      |    9.945|
+A<2>            |Result<7>      |   10.582|
+A<2>            |Result<8>      |   10.331|
+A<2>            |Result<9>      |   10.491|
+A<2>            |Result<10>     |   10.274|
+A<2>            |Result<11>     |   10.520|
+A<2>            |Result<12>     |   10.321|
+A<2>            |Result<13>     |   10.789|
+A<2>            |Result<14>     |   10.561|
+A<2>            |Result<15>     |   10.959|
+A<2>            |Result<16>     |   10.607|
+A<2>            |Result<17>     |   11.238|
+A<2>            |Result<18>     |   10.836|
+A<2>            |Result<19>     |   11.152|
+A<2>            |Result<20>     |   11.276|
+A<2>            |Result<21>     |   11.429|
+A<2>            |Result<22>     |   11.136|
+A<2>            |Result<23>     |   11.647|
+A<2>            |Result<24>     |   11.405|
+A<2>            |Result<25>     |   11.851|
+A<2>            |Result<26>     |   11.466|
+A<2>            |Result<27>     |   11.738|
+A<2>            |Result<28>     |   11.797|
+A<2>            |Result<29>     |   11.905|
+A<2>            |Result<30>     |   11.406|
+A<2>            |Result<31>     |   12.045|
+A<2>            |Zero           |   14.065|
+A<3>            |Result<3>      |   10.133|
+A<3>            |Result<4>      |   10.179|
+A<3>            |Result<5>      |   10.033|
+A<3>            |Result<6>      |   10.031|
+A<3>            |Result<7>      |   10.668|
+A<3>            |Result<8>      |   10.417|
+A<3>            |Result<9>      |   10.577|
+A<3>            |Result<10>     |   10.360|
+A<3>            |Result<11>     |   10.606|
+A<3>            |Result<12>     |   10.407|
+A<3>            |Result<13>     |   10.875|
+A<3>            |Result<14>     |   10.647|
+A<3>            |Result<15>     |   11.045|
+A<3>            |Result<16>     |   10.693|
+A<3>            |Result<17>     |   11.324|
+A<3>            |Result<18>     |   10.922|
+A<3>            |Result<19>     |   11.238|
+A<3>            |Result<20>     |   11.362|
+A<3>            |Result<21>     |   11.515|
+A<3>            |Result<22>     |   11.222|
+A<3>            |Result<23>     |   11.733|
+A<3>            |Result<24>     |   11.491|
+A<3>            |Result<25>     |   11.937|
+A<3>            |Result<26>     |   11.552|
+A<3>            |Result<27>     |   11.824|
+A<3>            |Result<28>     |   11.883|
+A<3>            |Result<29>     |   11.991|
+A<3>            |Result<30>     |   11.492|
+A<3>            |Result<31>     |   12.131|
+A<3>            |Zero           |   14.084|
+A<4>            |Result<4>      |   10.466|
+A<4>            |Result<5>      |   10.302|
+A<4>            |Result<6>      |   10.426|
+A<4>            |Result<7>      |   11.051|
+A<4>            |Result<8>      |   10.846|
+A<4>            |Result<9>      |   11.006|
+A<4>            |Result<10>     |   10.789|
+A<4>            |Result<11>     |   11.035|
+A<4>            |Result<12>     |   10.836|
+A<4>            |Result<13>     |   11.304|
+A<4>            |Result<14>     |   11.076|
+A<4>            |Result<15>     |   11.474|
+A<4>            |Result<16>     |   11.122|
+A<4>            |Result<17>     |   11.753|
+A<4>            |Result<18>     |   11.351|
+A<4>            |Result<19>     |   11.667|
+A<4>            |Result<20>     |   11.791|
+A<4>            |Result<21>     |   11.944|
+A<4>            |Result<22>     |   11.651|
+A<4>            |Result<23>     |   12.162|
+A<4>            |Result<24>     |   11.920|
+A<4>            |Result<25>     |   12.366|
+A<4>            |Result<26>     |   11.981|
+A<4>            |Result<27>     |   12.253|
+A<4>            |Result<28>     |   12.312|
+A<4>            |Result<29>     |   12.420|
+A<4>            |Result<30>     |   11.921|
+A<4>            |Result<31>     |   12.560|
+A<4>            |Zero           |   14.353|
+A<5>            |Result<5>      |   10.134|
+A<5>            |Result<6>      |   10.313|
+A<5>            |Result<7>      |   10.954|
+A<5>            |Result<8>      |   10.738|
+A<5>            |Result<9>      |   10.898|
+A<5>            |Result<10>     |   10.681|
+A<5>            |Result<11>     |   10.927|
+A<5>            |Result<12>     |   10.728|
+A<5>            |Result<13>     |   11.196|
+A<5>            |Result<14>     |   10.968|
+A<5>            |Result<15>     |   11.366|
+A<5>            |Result<16>     |   11.014|
+A<5>            |Result<17>     |   11.645|
+A<5>            |Result<18>     |   11.243|
+A<5>            |Result<19>     |   11.559|
+A<5>            |Result<20>     |   11.683|
+A<5>            |Result<21>     |   11.836|
+A<5>            |Result<22>     |   11.543|
+A<5>            |Result<23>     |   12.054|
+A<5>            |Result<24>     |   11.812|
+A<5>            |Result<25>     |   12.258|
+A<5>            |Result<26>     |   11.873|
+A<5>            |Result<27>     |   12.145|
+A<5>            |Result<28>     |   12.204|
+A<5>            |Result<29>     |   12.312|
+A<5>            |Result<30>     |   11.813|
+A<5>            |Result<31>     |   12.452|
+A<5>            |Zero           |   14.185|
+A<6>            |Result<6>      |    9.971|
+A<6>            |Result<7>      |   10.629|
+A<6>            |Result<8>      |   10.409|
+A<6>            |Result<9>      |   10.569|
+A<6>            |Result<10>     |   10.352|
+A<6>            |Result<11>     |   10.598|
+A<6>            |Result<12>     |   10.399|
+A<6>            |Result<13>     |   10.867|
+A<6>            |Result<14>     |   10.639|
+A<6>            |Result<15>     |   11.037|
+A<6>            |Result<16>     |   10.685|
+A<6>            |Result<17>     |   11.316|
+A<6>            |Result<18>     |   10.914|
+A<6>            |Result<19>     |   11.230|
+A<6>            |Result<20>     |   11.354|
+A<6>            |Result<21>     |   11.507|
+A<6>            |Result<22>     |   11.214|
+A<6>            |Result<23>     |   11.725|
+A<6>            |Result<24>     |   11.483|
+A<6>            |Result<25>     |   11.929|
+A<6>            |Result<26>     |   11.544|
+A<6>            |Result<27>     |   11.816|
+A<6>            |Result<28>     |   11.875|
+A<6>            |Result<29>     |   11.983|
+A<6>            |Result<30>     |   11.484|
+A<6>            |Result<31>     |   12.123|
+A<6>            |Zero           |   13.531|
+A<7>            |Result<7>      |   10.349|
+A<7>            |Result<8>      |   10.205|
+A<7>            |Result<9>      |   10.365|
+A<7>            |Result<10>     |   10.148|
+A<7>            |Result<11>     |   10.394|
+A<7>            |Result<12>     |   10.195|
+A<7>            |Result<13>     |   10.663|
+A<7>            |Result<14>     |   10.435|
+A<7>            |Result<15>     |   10.833|
+A<7>            |Result<16>     |   10.481|
+A<7>            |Result<17>     |   11.112|
+A<7>            |Result<18>     |   10.710|
+A<7>            |Result<19>     |   11.026|
+A<7>            |Result<20>     |   11.150|
+A<7>            |Result<21>     |   11.303|
+A<7>            |Result<22>     |   11.010|
+A<7>            |Result<23>     |   11.521|
+A<7>            |Result<24>     |   11.279|
+A<7>            |Result<25>     |   11.725|
+A<7>            |Result<26>     |   11.340|
+A<7>            |Result<27>     |   11.612|
+A<7>            |Result<28>     |   11.671|
+A<7>            |Result<29>     |   11.779|
+A<7>            |Result<30>     |   11.280|
+A<7>            |Result<31>     |   11.919|
+A<7>            |Zero           |   13.327|
+A<8>            |Result<8>      |   10.147|
+A<8>            |Result<9>      |   10.289|
+A<8>            |Result<10>     |   10.198|
+A<8>            |Result<11>     |   10.432|
+A<8>            |Result<12>     |   10.279|
+A<8>            |Result<13>     |   10.747|
+A<8>            |Result<14>     |   10.519|
+A<8>            |Result<15>     |   10.917|
+A<8>            |Result<16>     |   10.565|
+A<8>            |Result<17>     |   11.196|
+A<8>            |Result<18>     |   10.794|
+A<8>            |Result<19>     |   11.110|
+A<8>            |Result<20>     |   11.234|
+A<8>            |Result<21>     |   11.387|
+A<8>            |Result<22>     |   11.094|
+A<8>            |Result<23>     |   11.605|
+A<8>            |Result<24>     |   11.363|
+A<8>            |Result<25>     |   11.809|
+A<8>            |Result<26>     |   11.424|
+A<8>            |Result<27>     |   11.696|
+A<8>            |Result<28>     |   11.755|
+A<8>            |Result<29>     |   11.863|
+A<8>            |Result<30>     |   11.364|
+A<8>            |Result<31>     |   12.003|
+A<8>            |Zero           |   13.411|
+A<9>            |Result<9>      |   10.321|
+A<9>            |Result<10>     |   10.285|
+A<9>            |Result<11>     |   10.535|
+A<9>            |Result<12>     |   10.371|
+A<9>            |Result<13>     |   10.839|
+A<9>            |Result<14>     |   10.611|
+A<9>            |Result<15>     |   11.009|
+A<9>            |Result<16>     |   10.657|
+A<9>            |Result<17>     |   11.288|
+A<9>            |Result<18>     |   10.886|
+A<9>            |Result<19>     |   11.202|
+A<9>            |Result<20>     |   11.326|
+A<9>            |Result<21>     |   11.479|
+A<9>            |Result<22>     |   11.186|
+A<9>            |Result<23>     |   11.697|
+A<9>            |Result<24>     |   11.455|
+A<9>            |Result<25>     |   11.901|
+A<9>            |Result<26>     |   11.516|
+A<9>            |Result<27>     |   11.788|
+A<9>            |Result<28>     |   11.847|
+A<9>            |Result<29>     |   11.955|
+A<9>            |Result<30>     |   11.456|
+A<9>            |Result<31>     |   12.095|
+A<9>            |Zero           |   13.503|
+A<10>           |Result<10>     |    9.618|
+A<10>           |Result<11>     |    9.885|
+A<10>           |Result<12>     |    9.717|
+A<10>           |Result<13>     |   10.185|
+A<10>           |Result<14>     |    9.957|
+A<10>           |Result<15>     |   10.355|
+A<10>           |Result<16>     |   10.003|
+A<10>           |Result<17>     |   10.634|
+A<10>           |Result<18>     |   10.232|
+A<10>           |Result<19>     |   10.548|
+A<10>           |Result<20>     |   10.672|
+A<10>           |Result<21>     |   10.825|
+A<10>           |Result<22>     |   10.532|
+A<10>           |Result<23>     |   11.043|
+A<10>           |Result<24>     |   10.801|
+A<10>           |Result<25>     |   11.247|
+A<10>           |Result<26>     |   10.862|
+A<10>           |Result<27>     |   11.134|
+A<10>           |Result<28>     |   11.193|
+A<10>           |Result<29>     |   11.301|
+A<10>           |Result<30>     |   10.802|
+A<10>           |Result<31>     |   11.441|
+A<10>           |Zero           |   12.849|
+A<11>           |Result<11>     |    9.857|
+A<11>           |Result<12>     |    9.765|
+A<11>           |Result<13>     |   10.233|
+A<11>           |Result<14>     |   10.005|
+A<11>           |Result<15>     |   10.403|
+A<11>           |Result<16>     |   10.051|
+A<11>           |Result<17>     |   10.682|
+A<11>           |Result<18>     |   10.280|
+A<11>           |Result<19>     |   10.596|
+A<11>           |Result<20>     |   10.720|
+A<11>           |Result<21>     |   10.873|
+A<11>           |Result<22>     |   10.580|
+A<11>           |Result<23>     |   11.091|
+A<11>           |Result<24>     |   10.849|
+A<11>           |Result<25>     |   11.295|
+A<11>           |Result<26>     |   10.910|
+A<11>           |Result<27>     |   11.182|
+A<11>           |Result<28>     |   11.241|
+A<11>           |Result<29>     |   11.349|
+A<11>           |Result<30>     |   10.850|
+A<11>           |Result<31>     |   11.489|
+A<11>           |Zero           |   12.897|
+A<12>           |Result<12>     |    9.661|
+A<12>           |Result<13>     |   10.111|
+A<12>           |Result<14>     |   10.009|
+A<12>           |Result<15>     |   10.395|
+A<12>           |Result<16>     |   10.089|
+A<12>           |Result<17>     |   10.720|
+A<12>           |Result<18>     |   10.318|
+A<12>           |Result<19>     |   10.634|
+A<12>           |Result<20>     |   10.758|
+A<12>           |Result<21>     |   10.911|
+A<12>           |Result<22>     |   10.618|
+A<12>           |Result<23>     |   11.129|
+A<12>           |Result<24>     |   10.887|
+A<12>           |Result<25>     |   11.333|
+A<12>           |Result<26>     |   10.948|
+A<12>           |Result<27>     |   11.220|
+A<12>           |Result<28>     |   11.279|
+A<12>           |Result<29>     |   11.387|
+A<12>           |Result<30>     |   10.888|
+A<12>           |Result<31>     |   11.527|
+A<12>           |Zero           |   12.889|
+A<13>           |Result<13>     |   10.092|
+A<13>           |Result<14>     |   10.045|
+A<13>           |Result<15>     |   10.447|
+A<13>           |Result<16>     |   10.130|
+A<13>           |Result<17>     |   10.761|
+A<13>           |Result<18>     |   10.359|
+A<13>           |Result<19>     |   10.675|
+A<13>           |Result<20>     |   10.799|
+A<13>           |Result<21>     |   10.952|
+A<13>           |Result<22>     |   10.659|
+A<13>           |Result<23>     |   11.170|
+A<13>           |Result<24>     |   10.928|
+A<13>           |Result<25>     |   11.374|
+A<13>           |Result<26>     |   10.989|
+A<13>           |Result<27>     |   11.261|
+A<13>           |Result<28>     |   11.320|
+A<13>           |Result<29>     |   11.428|
+A<13>           |Result<30>     |   10.929|
+A<13>           |Result<31>     |   11.568|
+A<13>           |Zero           |   12.941|
+A<14>           |Result<14>     |    9.783|
+A<14>           |Result<15>     |   10.202|
+A<14>           |Result<16>     |    9.881|
+A<14>           |Result<17>     |   10.512|
+A<14>           |Result<18>     |   10.110|
+A<14>           |Result<19>     |   10.426|
+A<14>           |Result<20>     |   10.550|
+A<14>           |Result<21>     |   10.703|
+A<14>           |Result<22>     |   10.410|
+A<14>           |Result<23>     |   10.921|
+A<14>           |Result<24>     |   10.679|
+A<14>           |Result<25>     |   11.125|
+A<14>           |Result<26>     |   10.740|
+A<14>           |Result<27>     |   11.012|
+A<14>           |Result<28>     |   11.071|
+A<14>           |Result<29>     |   11.179|
+A<14>           |Result<30>     |   10.680|
+A<14>           |Result<31>     |   11.319|
+A<14>           |Zero           |   12.696|
+A<15>           |Result<15>     |   10.304|
+A<15>           |Result<16>     |   10.059|
+A<15>           |Result<17>     |   10.690|
+A<15>           |Result<18>     |   10.288|
+A<15>           |Result<19>     |   10.604|
+A<15>           |Result<20>     |   10.728|
+A<15>           |Result<21>     |   10.881|
+A<15>           |Result<22>     |   10.588|
+A<15>           |Result<23>     |   11.099|
+A<15>           |Result<24>     |   10.857|
+A<15>           |Result<25>     |   11.303|
+A<15>           |Result<26>     |   10.918|
+A<15>           |Result<27>     |   11.190|
+A<15>           |Result<28>     |   11.249|
+A<15>           |Result<29>     |   11.357|
+A<15>           |Result<30>     |   10.858|
+A<15>           |Result<31>     |   11.497|
+A<15>           |Zero           |   12.798|
+A<16>           |Result<16>     |   10.219|
+A<16>           |Result<17>     |   11.323|
+A<16>           |Result<18>     |   11.045|
+A<16>           |Result<19>     |   11.349|
+A<16>           |Result<20>     |   11.521|
+A<16>           |Result<21>     |   11.674|
+A<16>           |Result<22>     |   11.381|
+A<16>           |Result<23>     |   11.892|
+A<16>           |Result<24>     |   11.650|
+A<16>           |Result<25>     |   12.096|
+A<16>           |Result<26>     |   11.711|
+A<16>           |Result<27>     |   11.983|
+A<16>           |Result<28>     |   12.042|
+A<16>           |Result<29>     |   12.150|
+A<16>           |Result<30>     |   11.651|
+A<16>           |Result<31>     |   12.290|
+A<16>           |Zero           |   13.350|
+A<17>           |Result<17>     |   10.661|
+A<17>           |Result<18>     |   11.141|
+A<17>           |Result<19>     |   11.447|
+A<17>           |Result<20>     |   11.581|
+A<17>           |Result<21>     |   11.734|
+A<17>           |Result<22>     |   11.441|
+A<17>           |Result<23>     |   11.952|
+A<17>           |Result<24>     |   11.710|
+A<17>           |Result<25>     |   12.156|
+A<17>           |Result<26>     |   11.771|
+A<17>           |Result<27>     |   12.043|
+A<17>           |Result<28>     |   12.102|
+A<17>           |Result<29>     |   12.210|
+A<17>           |Result<30>     |   11.711|
+A<17>           |Result<31>     |   12.350|
+A<17>           |Zero           |   13.423|
+A<18>           |Result<18>     |    9.956|
+A<18>           |Result<19>     |   10.915|
+A<18>           |Result<20>     |   11.070|
+A<18>           |Result<21>     |   11.223|
+A<18>           |Result<22>     |   10.930|
+A<18>           |Result<23>     |   11.441|
+A<18>           |Result<24>     |   11.199|
+A<18>           |Result<25>     |   11.645|
+A<18>           |Result<26>     |   11.260|
+A<18>           |Result<27>     |   11.532|
+A<18>           |Result<28>     |   11.591|
+A<18>           |Result<29>     |   11.699|
+A<18>           |Result<30>     |   11.200|
+A<18>           |Result<31>     |   11.839|
+A<18>           |Zero           |   12.899|
+A<19>           |Result<19>     |   10.302|
+A<19>           |Result<20>     |   10.829|
+A<19>           |Result<21>     |   10.982|
+A<19>           |Result<22>     |   10.689|
+A<19>           |Result<23>     |   11.200|
+A<19>           |Result<24>     |   10.958|
+A<19>           |Result<25>     |   11.404|
+A<19>           |Result<26>     |   11.019|
+A<19>           |Result<27>     |   11.291|
+A<19>           |Result<28>     |   11.350|
+A<19>           |Result<29>     |   11.458|
+A<19>           |Result<30>     |   10.959|
+A<19>           |Result<31>     |   11.598|
+A<19>           |Zero           |   12.658|
+A<20>           |Result<20>     |   10.283|
+A<20>           |Result<21>     |   11.178|
+A<20>           |Result<22>     |   11.009|
+A<20>           |Result<23>     |   11.508|
+A<20>           |Result<24>     |   11.314|
+A<20>           |Result<25>     |   11.760|
+A<20>           |Result<26>     |   11.375|
+A<20>           |Result<27>     |   11.647|
+A<20>           |Result<28>     |   11.706|
+A<20>           |Result<29>     |   11.814|
+A<20>           |Result<30>     |   11.315|
+A<20>           |Result<31>     |   11.954|
+A<20>           |Zero           |   13.014|
+A<21>           |Result<21>     |   10.942|
+A<21>           |Result<22>     |   10.830|
+A<21>           |Result<23>     |   11.345|
+A<21>           |Result<24>     |   11.138|
+A<21>           |Result<25>     |   11.584|
+A<21>           |Result<26>     |   11.199|
+A<21>           |Result<27>     |   11.471|
+A<21>           |Result<28>     |   11.530|
+A<21>           |Result<29>     |   11.638|
+A<21>           |Result<30>     |   11.139|
+A<21>           |Result<31>     |   11.778|
+A<21>           |Zero           |   12.838|
+A<22>           |Result<22>     |    9.825|
+A<22>           |Result<23>     |   11.420|
+A<22>           |Result<24>     |   11.209|
+A<22>           |Result<25>     |   11.655|
+A<22>           |Result<26>     |   11.270|
+A<22>           |Result<27>     |   11.542|
+A<22>           |Result<28>     |   11.601|
+A<22>           |Result<29>     |   11.709|
+A<22>           |Result<30>     |   11.210|
+A<22>           |Result<31>     |   11.849|
+A<22>           |Zero           |   12.909|
+A<23>           |Result<23>     |   10.109|
+A<23>           |Result<24>     |   10.671|
+A<23>           |Result<25>     |   11.117|
+A<23>           |Result<26>     |   10.732|
+A<23>           |Result<27>     |   11.004|
+A<23>           |Result<28>     |   11.063|
+A<23>           |Result<29>     |   11.171|
+A<23>           |Result<30>     |   10.672|
+A<23>           |Result<31>     |   11.311|
+A<23>           |Zero           |   12.371|
+A<24>           |Result<24>     |   10.079|
+A<24>           |Result<25>     |   11.144|
+A<24>           |Result<26>     |   10.883|
+A<24>           |Result<27>     |   11.143|
+A<24>           |Result<28>     |   11.250|
+A<24>           |Result<29>     |   11.358|
+A<24>           |Result<30>     |   10.859|
+A<24>           |Result<31>     |   11.498|
+A<24>           |Zero           |   12.510|
+A<25>           |Result<25>     |   10.232|
+A<25>           |Result<26>     |   11.221|
+A<25>           |Result<27>     |   11.483|
+A<25>           |Result<28>     |   11.552|
+A<25>           |Result<29>     |   11.660|
+A<25>           |Result<30>     |   11.161|
+A<25>           |Result<31>     |   11.800|
+A<25>           |Zero           |   12.850|
+A<26>           |Result<26>     |    9.806|
+A<26>           |Result<27>     |   10.474|
+A<26>           |Result<28>     |   10.564|
+A<26>           |Result<29>     |   10.672|
+A<26>           |Result<30>     |   10.173|
+A<26>           |Result<31>     |   10.812|
+A<26>           |Zero           |   11.841|
+A<27>           |Result<27>     |   10.326|
+A<27>           |Result<28>     |   10.552|
+A<27>           |Result<29>     |   10.660|
+A<27>           |Result<30>     |   10.161|
+A<27>           |Result<31>     |   10.800|
+A<27>           |Zero           |   11.693|
+A<28>           |Result<28>     |   10.246|
+A<28>           |Result<29>     |   10.731|
+A<28>           |Result<30>     |   10.356|
+A<28>           |Result<31>     |   10.983|
+A<28>           |Zero           |   11.755|
+A<29>           |Result<29>     |   10.306|
+A<29>           |Result<30>     |   10.544|
+A<29>           |Result<31>     |   11.173|
+A<29>           |Zero           |   11.943|
+A<30>           |Result<30>     |    9.593|
+A<30>           |Result<31>     |   10.897|
+A<30>           |Zero           |   11.574|
+A<31>           |Result<31>     |   10.538|
+A<31>           |Zero           |   11.215|
+ALU_operation<0>|Result<0>      |   12.019|
+ALU_operation<0>|Result<1>      |   12.205|
+ALU_operation<0>|Result<2>      |   12.342|
+ALU_operation<0>|Result<3>      |   12.679|
+ALU_operation<0>|Result<4>      |   12.711|
+ALU_operation<0>|Result<5>      |   12.565|
+ALU_operation<0>|Result<6>      |   12.563|
+ALU_operation<0>|Result<7>      |   13.200|
+ALU_operation<0>|Result<8>      |   12.949|
+ALU_operation<0>|Result<9>      |   13.109|
+ALU_operation<0>|Result<10>     |   12.892|
+ALU_operation<0>|Result<11>     |   13.138|
+ALU_operation<0>|Result<12>     |   12.939|
+ALU_operation<0>|Result<13>     |   13.407|
+ALU_operation<0>|Result<14>     |   13.179|
+ALU_operation<0>|Result<15>     |   13.577|
+ALU_operation<0>|Result<16>     |   13.225|
+ALU_operation<0>|Result<17>     |   13.856|
+ALU_operation<0>|Result<18>     |   13.454|
+ALU_operation<0>|Result<19>     |   13.770|
+ALU_operation<0>|Result<20>     |   13.894|
+ALU_operation<0>|Result<21>     |   14.396|
+ALU_operation<0>|Result<22>     |   14.227|
+ALU_operation<0>|Result<23>     |   14.726|
+ALU_operation<0>|Result<24>     |   14.532|
+ALU_operation<0>|Result<25>     |   14.978|
+ALU_operation<0>|Result<26>     |   14.593|
+ALU_operation<0>|Result<27>     |   14.865|
+ALU_operation<0>|Result<28>     |   14.924|
+ALU_operation<0>|Result<29>     |   15.032|
+ALU_operation<0>|Result<30>     |   14.533|
+ALU_operation<0>|Result<31>     |   15.172|
+ALU_operation<0>|Zero           |   16.638|
+ALU_operation<1>|Result<0>      |    9.411|
+ALU_operation<1>|Result<1>      |    9.503|
+ALU_operation<1>|Result<2>      |    9.585|
+ALU_operation<1>|Result<3>      |    9.906|
+ALU_operation<1>|Result<4>      |    9.891|
+ALU_operation<1>|Result<5>      |    9.787|
+ALU_operation<1>|Result<6>      |    9.966|
+ALU_operation<1>|Result<7>      |   10.607|
+ALU_operation<1>|Result<8>      |   10.391|
+ALU_operation<1>|Result<9>      |   10.551|
+ALU_operation<1>|Result<10>     |   10.334|
+ALU_operation<1>|Result<11>     |   10.580|
+ALU_operation<1>|Result<12>     |   10.381|
+ALU_operation<1>|Result<13>     |   10.849|
+ALU_operation<1>|Result<14>     |   10.799|
+ALU_operation<1>|Result<15>     |   11.201|
+ALU_operation<1>|Result<16>     |   10.884|
+ALU_operation<1>|Result<17>     |   11.625|
+ALU_operation<1>|Result<18>     |   11.459|
+ALU_operation<1>|Result<19>     |   11.765|
+ALU_operation<1>|Result<20>     |   11.899|
+ALU_operation<1>|Result<21>     |   12.052|
+ALU_operation<1>|Result<22>     |   11.759|
+ALU_operation<1>|Result<23>     |   12.918|
+ALU_operation<1>|Result<24>     |   12.707|
+ALU_operation<1>|Result<25>     |   13.153|
+ALU_operation<1>|Result<26>     |   12.782|
+ALU_operation<1>|Result<27>     |   13.044|
+ALU_operation<1>|Result<28>     |   13.113|
+ALU_operation<1>|Result<29>     |   13.221|
+ALU_operation<1>|Result<30>     |   12.722|
+ALU_operation<1>|Result<31>     |   13.361|
+ALU_operation<1>|Zero           |   14.411|
+ALU_operation<2>|Result<0>      |    9.118|
+ALU_operation<2>|Result<1>      |    9.210|
+ALU_operation<2>|Result<2>      |    9.357|
+ALU_operation<2>|Result<3>      |    9.711|
+ALU_operation<2>|Result<4>      |    9.805|
+ALU_operation<2>|Result<5>      |    9.641|
+ALU_operation<2>|Result<6>      |    9.765|
+ALU_operation<2>|Result<7>      |   10.390|
+ALU_operation<2>|Result<8>      |   10.185|
+ALU_operation<2>|Result<9>      |   10.345|
+ALU_operation<2>|Result<10>     |   10.128|
+ALU_operation<2>|Result<11>     |   10.374|
+ALU_operation<2>|Result<12>     |   10.183|
+ALU_operation<2>|Result<13>     |   10.643|
+ALU_operation<2>|Result<14>     |   10.531|
+ALU_operation<2>|Result<15>     |   10.917|
+ALU_operation<2>|Result<16>     |   10.611|
+ALU_operation<2>|Result<17>     |   11.242|
+ALU_operation<2>|Result<18>     |   11.091|
+ALU_operation<2>|Result<19>     |   11.397|
+ALU_operation<2>|Result<20>     |   11.531|
+ALU_operation<2>|Result<21>     |   11.684|
+ALU_operation<2>|Result<22>     |   11.391|
+ALU_operation<2>|Result<23>     |   12.463|
+ALU_operation<2>|Result<24>     |   12.252|
+ALU_operation<2>|Result<25>     |   12.698|
+ALU_operation<2>|Result<26>     |   12.313|
+ALU_operation<2>|Result<27>     |   12.585|
+ALU_operation<2>|Result<28>     |   12.644|
+ALU_operation<2>|Result<29>     |   12.752|
+ALU_operation<2>|Result<30>     |   12.253|
+ALU_operation<2>|Result<31>     |   12.892|
+ALU_operation<2>|Zero           |   13.952|
+B<0>            |Result<0>      |    8.530|
+B<0>            |Result<1>      |    8.622|
+B<0>            |Result<2>      |    8.704|
+B<0>            |Result<3>      |    9.025|
+B<0>            |Result<4>      |    9.010|
+B<0>            |Result<5>      |    8.864|
+B<0>            |Result<6>      |    8.862|
+B<0>            |Result<7>      |    9.499|
+B<0>            |Result<8>      |    9.248|
+B<0>            |Result<9>      |    9.408|
+B<0>            |Result<10>     |    9.191|
+B<0>            |Result<11>     |    9.437|
+B<0>            |Result<12>     |    9.238|
+B<0>            |Result<13>     |    9.706|
+B<0>            |Result<14>     |    9.478|
+B<0>            |Result<15>     |    9.876|
+B<0>            |Result<16>     |    9.620|
+B<0>            |Result<17>     |   10.416|
+B<0>            |Result<18>     |   10.138|
+B<0>            |Result<19>     |   10.442|
+B<0>            |Result<20>     |   10.614|
+B<0>            |Result<21>     |   10.767|
+B<0>            |Result<22>     |   10.474|
+B<0>            |Result<23>     |   10.985|
+B<0>            |Result<24>     |   10.743|
+B<0>            |Result<25>     |   11.189|
+B<0>            |Result<26>     |   10.804|
+B<0>            |Result<27>     |   11.076|
+B<0>            |Result<28>     |   11.135|
+B<0>            |Result<29>     |   11.243|
+B<0>            |Result<30>     |   10.744|
+B<0>            |Result<31>     |   11.383|
+B<0>            |Zero           |   13.000|
+B<1>            |Result<1>      |    8.393|
+B<1>            |Result<2>      |    8.530|
+B<1>            |Result<3>      |    8.867|
+B<1>            |Result<4>      |    8.841|
+B<1>            |Result<5>      |    8.695|
+B<1>            |Result<6>      |    8.693|
+B<1>            |Result<7>      |    9.330|
+B<1>            |Result<8>      |    9.079|
+B<1>            |Result<9>      |    9.239|
+B<1>            |Result<10>     |    9.022|
+B<1>            |Result<11>     |    9.268|
+B<1>            |Result<12>     |    9.069|
+B<1>            |Result<13>     |    9.537|
+B<1>            |Result<14>     |    9.309|
+B<1>            |Result<15>     |    9.707|
+B<1>            |Result<16>     |    9.355|
+B<1>            |Result<17>     |    9.986|
+B<1>            |Result<18>     |    9.906|
+B<1>            |Result<19>     |   10.212|
+B<1>            |Result<20>     |   10.346|
+B<1>            |Result<21>     |   10.499|
+B<1>            |Result<22>     |   10.206|
+B<1>            |Result<23>     |   10.717|
+B<1>            |Result<24>     |   10.475|
+B<1>            |Result<25>     |   10.921|
+B<1>            |Result<26>     |   10.536|
+B<1>            |Result<27>     |   10.808|
+B<1>            |Result<28>     |   10.867|
+B<1>            |Result<29>     |   10.975|
+B<1>            |Result<30>     |   10.476|
+B<1>            |Result<31>     |   11.115|
+B<1>            |Zero           |   12.826|
+B<2>            |Result<2>      |    8.477|
+B<2>            |Result<3>      |    8.831|
+B<2>            |Result<4>      |    8.801|
+B<2>            |Result<5>      |    8.655|
+B<2>            |Result<6>      |    8.653|
+B<2>            |Result<7>      |    9.290|
+B<2>            |Result<8>      |    9.039|
+B<2>            |Result<9>      |    9.199|
+B<2>            |Result<10>     |    8.982|
+B<2>            |Result<11>     |    9.228|
+B<2>            |Result<12>     |    9.029|
+B<2>            |Result<13>     |    9.497|
+B<2>            |Result<14>     |    9.269|
+B<2>            |Result<15>     |    9.667|
+B<2>            |Result<16>     |    9.315|
+B<2>            |Result<17>     |    9.946|
+B<2>            |Result<18>     |    9.544|
+B<2>            |Result<19>     |   10.122|
+B<2>            |Result<20>     |   10.277|
+B<2>            |Result<21>     |   10.430|
+B<2>            |Result<22>     |   10.137|
+B<2>            |Result<23>     |   10.648|
+B<2>            |Result<24>     |   10.406|
+B<2>            |Result<25>     |   10.852|
+B<2>            |Result<26>     |   10.467|
+B<2>            |Result<27>     |   10.739|
+B<2>            |Result<28>     |   10.798|
+B<2>            |Result<29>     |   10.906|
+B<2>            |Result<30>     |   10.407|
+B<2>            |Result<31>     |   11.046|
+B<2>            |Zero           |   12.773|
+B<3>            |Result<3>      |    8.427|
+B<3>            |Result<4>      |    8.473|
+B<3>            |Result<5>      |    8.327|
+B<3>            |Result<6>      |    8.325|
+B<3>            |Result<7>      |    8.962|
+B<3>            |Result<8>      |    8.711|
+B<3>            |Result<9>      |    8.871|
+B<3>            |Result<10>     |    8.654|
+B<3>            |Result<11>     |    8.900|
+B<3>            |Result<12>     |    8.701|
+B<3>            |Result<13>     |    9.169|
+B<3>            |Result<14>     |    8.941|
+B<3>            |Result<15>     |    9.339|
+B<3>            |Result<16>     |    8.987|
+B<3>            |Result<17>     |    9.618|
+B<3>            |Result<18>     |    9.216|
+B<3>            |Result<19>     |    9.532|
+B<3>            |Result<20>     |   10.262|
+B<3>            |Result<21>     |   10.415|
+B<3>            |Result<22>     |   10.122|
+B<3>            |Result<23>     |   10.633|
+B<3>            |Result<24>     |   10.391|
+B<3>            |Result<25>     |   10.837|
+B<3>            |Result<26>     |   10.452|
+B<3>            |Result<27>     |   10.724|
+B<3>            |Result<28>     |   10.783|
+B<3>            |Result<29>     |   10.891|
+B<3>            |Result<30>     |   10.392|
+B<3>            |Result<31>     |   11.031|
+B<3>            |Zero           |   12.378|
+B<4>            |Result<4>      |    8.634|
+B<4>            |Result<5>      |    8.470|
+B<4>            |Result<6>      |    8.594|
+B<4>            |Result<7>      |    9.219|
+B<4>            |Result<8>      |    9.014|
+B<4>            |Result<9>      |    9.174|
+B<4>            |Result<10>     |    8.957|
+B<4>            |Result<11>     |    9.203|
+B<4>            |Result<12>     |    9.004|
+B<4>            |Result<13>     |    9.472|
+B<4>            |Result<14>     |    9.244|
+B<4>            |Result<15>     |    9.642|
+B<4>            |Result<16>     |    9.290|
+B<4>            |Result<17>     |    9.921|
+B<4>            |Result<18>     |    9.519|
+B<4>            |Result<19>     |    9.835|
+B<4>            |Result<20>     |    9.959|
+B<4>            |Result<21>     |   10.444|
+B<4>            |Result<22>     |   10.275|
+B<4>            |Result<23>     |   10.774|
+B<4>            |Result<24>     |   10.580|
+B<4>            |Result<25>     |   11.026|
+B<4>            |Result<26>     |   10.641|
+B<4>            |Result<27>     |   10.913|
+B<4>            |Result<28>     |   10.972|
+B<4>            |Result<29>     |   11.080|
+B<4>            |Result<30>     |   10.581|
+B<4>            |Result<31>     |   11.220|
+B<4>            |Zero           |   12.521|
+B<5>            |Result<5>      |    8.417|
+B<5>            |Result<6>      |    8.596|
+B<5>            |Result<7>      |    9.237|
+B<5>            |Result<8>      |    9.021|
+B<5>            |Result<9>      |    9.181|
+B<5>            |Result<10>     |    8.964|
+B<5>            |Result<11>     |    9.210|
+B<5>            |Result<12>     |    9.011|
+B<5>            |Result<13>     |    9.479|
+B<5>            |Result<14>     |    9.251|
+B<5>            |Result<15>     |    9.649|
+B<5>            |Result<16>     |    9.297|
+B<5>            |Result<17>     |    9.928|
+B<5>            |Result<18>     |    9.526|
+B<5>            |Result<19>     |    9.842|
+B<5>            |Result<20>     |    9.966|
+B<5>            |Result<21>     |   10.119|
+B<5>            |Result<22>     |    9.936|
+B<5>            |Result<23>     |   10.437|
+B<5>            |Result<24>     |   10.205|
+B<5>            |Result<25>     |   10.651|
+B<5>            |Result<26>     |   10.266|
+B<5>            |Result<27>     |   10.538|
+B<5>            |Result<28>     |   10.597|
+B<5>            |Result<29>     |   10.705|
+B<5>            |Result<30>     |   10.206|
+B<5>            |Result<31>     |   10.845|
+B<5>            |Zero           |   12.468|
+B<6>            |Result<6>      |    8.560|
+B<6>            |Result<7>      |    9.218|
+B<6>            |Result<8>      |    8.998|
+B<6>            |Result<9>      |    9.158|
+B<6>            |Result<10>     |    8.941|
+B<6>            |Result<11>     |    9.187|
+B<6>            |Result<12>     |    8.988|
+B<6>            |Result<13>     |    9.456|
+B<6>            |Result<14>     |    9.228|
+B<6>            |Result<15>     |    9.626|
+B<6>            |Result<16>     |    9.274|
+B<6>            |Result<17>     |    9.905|
+B<6>            |Result<18>     |    9.503|
+B<6>            |Result<19>     |    9.819|
+B<6>            |Result<20>     |    9.943|
+B<6>            |Result<21>     |   10.096|
+B<6>            |Result<22>     |    9.803|
+B<6>            |Result<23>     |   11.398|
+B<6>            |Result<24>     |   11.187|
+B<6>            |Result<25>     |   11.633|
+B<6>            |Result<26>     |   11.248|
+B<6>            |Result<27>     |   11.520|
+B<6>            |Result<28>     |   11.579|
+B<6>            |Result<29>     |   11.687|
+B<6>            |Result<30>     |   11.188|
+B<6>            |Result<31>     |   11.827|
+B<6>            |Zero           |   12.887|
+B<7>            |Result<7>      |    9.022|
+B<7>            |Result<8>      |    8.878|
+B<7>            |Result<9>      |    9.038|
+B<7>            |Result<10>     |    8.821|
+B<7>            |Result<11>     |    9.067|
+B<7>            |Result<12>     |    8.868|
+B<7>            |Result<13>     |    9.336|
+B<7>            |Result<14>     |    9.108|
+B<7>            |Result<15>     |    9.506|
+B<7>            |Result<16>     |    9.154|
+B<7>            |Result<17>     |    9.785|
+B<7>            |Result<18>     |    9.383|
+B<7>            |Result<19>     |    9.699|
+B<7>            |Result<20>     |    9.823|
+B<7>            |Result<21>     |    9.976|
+B<7>            |Result<22>     |    9.683|
+B<7>            |Result<23>     |   10.194|
+B<7>            |Result<24>     |   10.412|
+B<7>            |Result<25>     |   10.858|
+B<7>            |Result<26>     |   10.473|
+B<7>            |Result<27>     |   10.745|
+B<7>            |Result<28>     |   10.804|
+B<7>            |Result<29>     |   10.912|
+B<7>            |Result<30>     |   10.413|
+B<7>            |Result<31>     |   11.052|
+B<7>            |Zero           |   12.112|
+B<8>            |Result<8>      |    8.622|
+B<8>            |Result<9>      |    8.764|
+B<8>            |Result<10>     |    8.673|
+B<8>            |Result<11>     |    8.907|
+B<8>            |Result<12>     |    8.754|
+B<8>            |Result<13>     |    9.222|
+B<8>            |Result<14>     |    8.994|
+B<8>            |Result<15>     |    9.392|
+B<8>            |Result<16>     |    9.040|
+B<8>            |Result<17>     |    9.671|
+B<8>            |Result<18>     |    9.269|
+B<8>            |Result<19>     |    9.585|
+B<8>            |Result<20>     |    9.709|
+B<8>            |Result<21>     |    9.862|
+B<8>            |Result<22>     |    9.569|
+B<8>            |Result<23>     |   10.080|
+B<8>            |Result<24>     |    9.838|
+B<8>            |Result<25>     |   10.904|
+B<8>            |Result<26>     |   10.643|
+B<8>            |Result<27>     |   10.903|
+B<8>            |Result<28>     |   11.010|
+B<8>            |Result<29>     |   11.118|
+B<8>            |Result<30>     |   10.619|
+B<8>            |Result<31>     |   11.258|
+B<8>            |Zero           |   12.270|
+B<9>            |Result<9>      |    8.788|
+B<9>            |Result<10>     |    8.752|
+B<9>            |Result<11>     |    9.002|
+B<9>            |Result<12>     |    8.838|
+B<9>            |Result<13>     |    9.306|
+B<9>            |Result<14>     |    9.078|
+B<9>            |Result<15>     |    9.476|
+B<9>            |Result<16>     |    9.124|
+B<9>            |Result<17>     |    9.755|
+B<9>            |Result<18>     |    9.353|
+B<9>            |Result<19>     |    9.669|
+B<9>            |Result<20>     |    9.793|
+B<9>            |Result<21>     |    9.946|
+B<9>            |Result<22>     |    9.653|
+B<9>            |Result<23>     |   10.164|
+B<9>            |Result<24>     |    9.922|
+B<9>            |Result<25>     |   10.368|
+B<9>            |Result<26>     |   10.611|
+B<9>            |Result<27>     |   10.873|
+B<9>            |Result<28>     |   10.942|
+B<9>            |Result<29>     |   11.050|
+B<9>            |Result<30>     |   10.551|
+B<9>            |Result<31>     |   11.190|
+B<9>            |Zero           |   12.240|
+B<10>           |Result<10>     |    9.149|
+B<10>           |Result<11>     |    9.416|
+B<10>           |Result<12>     |    9.248|
+B<10>           |Result<13>     |    9.716|
+B<10>           |Result<14>     |    9.488|
+B<10>           |Result<15>     |    9.886|
+B<10>           |Result<16>     |    9.534|
+B<10>           |Result<17>     |   10.165|
+B<10>           |Result<18>     |    9.763|
+B<10>           |Result<19>     |   10.079|
+B<10>           |Result<20>     |   10.203|
+B<10>           |Result<21>     |   10.356|
+B<10>           |Result<22>     |   10.063|
+B<10>           |Result<23>     |   10.574|
+B<10>           |Result<24>     |   10.332|
+B<10>           |Result<25>     |   10.778|
+B<10>           |Result<26>     |   10.393|
+B<10>           |Result<27>     |   11.150|
+B<10>           |Result<28>     |   11.240|
+B<10>           |Result<29>     |   11.348|
+B<10>           |Result<30>     |   10.849|
+B<10>           |Result<31>     |   11.488|
+B<10>           |Zero           |   12.517|
+B<11>           |Result<11>     |    9.126|
+B<11>           |Result<12>     |    9.034|
+B<11>           |Result<13>     |    9.502|
+B<11>           |Result<14>     |    9.274|
+B<11>           |Result<15>     |    9.672|
+B<11>           |Result<16>     |    9.320|
+B<11>           |Result<17>     |    9.951|
+B<11>           |Result<18>     |    9.549|
+B<11>           |Result<19>     |    9.865|
+B<11>           |Result<20>     |    9.989|
+B<11>           |Result<21>     |   10.142|
+B<11>           |Result<22>     |    9.849|
+B<11>           |Result<23>     |   10.360|
+B<11>           |Result<24>     |   10.118|
+B<11>           |Result<25>     |   10.564|
+B<11>           |Result<26>     |   10.179|
+B<11>           |Result<27>     |   10.451|
+B<11>           |Result<28>     |   10.796|
+B<11>           |Result<29>     |   10.904|
+B<11>           |Result<30>     |   10.405|
+B<11>           |Result<31>     |   11.044|
+B<11>           |Zero           |   12.166|
+B<12>           |Result<12>     |    9.119|
+B<12>           |Result<13>     |    9.569|
+B<12>           |Result<14>     |    9.467|
+B<12>           |Result<15>     |    9.853|
+B<12>           |Result<16>     |    9.547|
+B<12>           |Result<17>     |   10.178|
+B<12>           |Result<18>     |    9.776|
+B<12>           |Result<19>     |   10.092|
+B<12>           |Result<20>     |   10.216|
+B<12>           |Result<21>     |   10.369|
+B<12>           |Result<22>     |   10.076|
+B<12>           |Result<23>     |   10.587|
+B<12>           |Result<24>     |   10.345|
+B<12>           |Result<25>     |   10.791|
+B<12>           |Result<26>     |   10.406|
+B<12>           |Result<27>     |   10.678|
+B<12>           |Result<28>     |   10.737|
+B<12>           |Result<29>     |   10.949|
+B<12>           |Result<30>     |   10.574|
+B<12>           |Result<31>     |   11.201|
+B<12>           |Zero           |   12.347|
+B<13>           |Result<13>     |    9.282|
+B<13>           |Result<14>     |    9.235|
+B<13>           |Result<15>     |    9.637|
+B<13>           |Result<16>     |    9.320|
+B<13>           |Result<17>     |    9.951|
+B<13>           |Result<18>     |    9.549|
+B<13>           |Result<19>     |    9.865|
+B<13>           |Result<20>     |    9.989|
+B<13>           |Result<21>     |   10.142|
+B<13>           |Result<22>     |    9.849|
+B<13>           |Result<23>     |   10.360|
+B<13>           |Result<24>     |   10.118|
+B<13>           |Result<25>     |   10.564|
+B<13>           |Result<26>     |   10.179|
+B<13>           |Result<27>     |   10.451|
+B<13>           |Result<28>     |   10.510|
+B<13>           |Result<29>     |   10.618|
+B<13>           |Result<30>     |   10.268|
+B<13>           |Result<31>     |   10.897|
+B<13>           |Zero           |   12.131|
+B<14>           |Result<14>     |    9.114|
+B<14>           |Result<15>     |    9.533|
+B<14>           |Result<16>     |    9.212|
+B<14>           |Result<17>     |    9.843|
+B<14>           |Result<18>     |    9.441|
+B<14>           |Result<19>     |    9.757|
+B<14>           |Result<20>     |    9.881|
+B<14>           |Result<21>     |   10.034|
+B<14>           |Result<22>     |    9.741|
+B<14>           |Result<23>     |   10.252|
+B<14>           |Result<24>     |   10.010|
+B<14>           |Result<25>     |   10.456|
+B<14>           |Result<26>     |   10.071|
+B<14>           |Result<27>     |   10.343|
+B<14>           |Result<28>     |   10.402|
+B<14>           |Result<29>     |   10.510|
+B<14>           |Result<30>     |   10.011|
+B<14>           |Result<31>     |   11.196|
+B<14>           |Zero           |   12.027|
+B<15>           |Result<15>     |    9.493|
+B<15>           |Result<16>     |    9.248|
+B<15>           |Result<17>     |    9.879|
+B<15>           |Result<18>     |    9.477|
+B<15>           |Result<19>     |    9.793|
+B<15>           |Result<20>     |    9.917|
+B<15>           |Result<21>     |   10.070|
+B<15>           |Result<22>     |    9.777|
+B<15>           |Result<23>     |   10.288|
+B<15>           |Result<24>     |   10.046|
+B<15>           |Result<25>     |   10.492|
+B<15>           |Result<26>     |   10.107|
+B<15>           |Result<27>     |   10.379|
+B<15>           |Result<28>     |   10.438|
+B<15>           |Result<29>     |   10.546|
+B<15>           |Result<30>     |   10.047|
+B<15>           |Result<31>     |   10.686|
+B<15>           |Zero           |   11.987|
+B<16>           |Result<16>     |    8.995|
+B<16>           |Result<17>     |   10.215|
+B<16>           |Result<18>     |    9.937|
+B<16>           |Result<19>     |   10.241|
+B<16>           |Result<20>     |   10.413|
+B<16>           |Result<21>     |   10.566|
+B<16>           |Result<22>     |   10.273|
+B<16>           |Result<23>     |   10.784|
+B<16>           |Result<24>     |   10.542|
+B<16>           |Result<25>     |   10.988|
+B<16>           |Result<26>     |   10.603|
+B<16>           |Result<27>     |   10.875|
+B<16>           |Result<28>     |   10.934|
+B<16>           |Result<29>     |   11.042|
+B<16>           |Result<30>     |   10.543|
+B<16>           |Result<31>     |   11.182|
+B<16>           |Zero           |   12.242|
+B<17>           |Result<17>     |    9.249|
+B<17>           |Result<18>     |   10.000|
+B<17>           |Result<19>     |   10.306|
+B<17>           |Result<20>     |   10.440|
+B<17>           |Result<21>     |   10.593|
+B<17>           |Result<22>     |   10.300|
+B<17>           |Result<23>     |   10.811|
+B<17>           |Result<24>     |   10.569|
+B<17>           |Result<25>     |   11.015|
+B<17>           |Result<26>     |   10.630|
+B<17>           |Result<27>     |   10.902|
+B<17>           |Result<28>     |   10.961|
+B<17>           |Result<29>     |   11.069|
+B<17>           |Result<30>     |   10.570|
+B<17>           |Result<31>     |   11.209|
+B<17>           |Zero           |   12.282|
+B<18>           |Result<18>     |    9.984|
+B<18>           |Result<19>     |   10.830|
+B<18>           |Result<20>     |   10.985|
+B<18>           |Result<21>     |   11.138|
+B<18>           |Result<22>     |   10.845|
+B<18>           |Result<23>     |   11.356|
+B<18>           |Result<24>     |   11.114|
+B<18>           |Result<25>     |   11.560|
+B<18>           |Result<26>     |   11.175|
+B<18>           |Result<27>     |   11.447|
+B<18>           |Result<28>     |   11.506|
+B<18>           |Result<29>     |   11.614|
+B<18>           |Result<30>     |   11.115|
+B<18>           |Result<31>     |   11.754|
+B<18>           |Zero           |   12.814|
+B<19>           |Result<19>     |   10.565|
+B<19>           |Result<20>     |   11.586|
+B<19>           |Result<21>     |   11.739|
+B<19>           |Result<22>     |   11.446|
+B<19>           |Result<23>     |   11.957|
+B<19>           |Result<24>     |   11.715|
+B<19>           |Result<25>     |   12.161|
+B<19>           |Result<26>     |   11.776|
+B<19>           |Result<27>     |   12.048|
+B<19>           |Result<28>     |   12.107|
+B<19>           |Result<29>     |   12.215|
+B<19>           |Result<30>     |   11.716|
+B<19>           |Result<31>     |   12.355|
+B<19>           |Zero           |   13.415|
+B<20>           |Result<20>     |   10.160|
+B<20>           |Result<21>     |   11.347|
+B<20>           |Result<22>     |   11.178|
+B<20>           |Result<23>     |   11.677|
+B<20>           |Result<24>     |   11.483|
+B<20>           |Result<25>     |   11.929|
+B<20>           |Result<26>     |   11.544|
+B<20>           |Result<27>     |   11.816|
+B<20>           |Result<28>     |   11.875|
+B<20>           |Result<29>     |   11.983|
+B<20>           |Result<30>     |   11.484|
+B<20>           |Result<31>     |   12.123|
+B<20>           |Zero           |   13.183|
+B<21>           |Result<21>     |   10.238|
+B<21>           |Result<22>     |   10.753|
+B<21>           |Result<23>     |   11.254|
+B<21>           |Result<24>     |   11.022|
+B<21>           |Result<25>     |   11.468|
+B<21>           |Result<26>     |   11.083|
+B<21>           |Result<27>     |   11.355|
+B<21>           |Result<28>     |   11.414|
+B<21>           |Result<29>     |   11.522|
+B<21>           |Result<30>     |   11.023|
+B<21>           |Result<31>     |   11.662|
+B<21>           |Zero           |   12.722|
+B<22>           |Result<22>     |   10.123|
+B<22>           |Result<23>     |   11.928|
+B<22>           |Result<24>     |   11.717|
+B<22>           |Result<25>     |   12.163|
+B<22>           |Result<26>     |   11.778|
+B<22>           |Result<27>     |   12.050|
+B<22>           |Result<28>     |   12.109|
+B<22>           |Result<29>     |   12.217|
+B<22>           |Result<30>     |   11.718|
+B<22>           |Result<31>     |   12.357|
+B<22>           |Zero           |   13.417|
+B<23>           |Result<23>     |   10.840|
+B<23>           |Result<24>     |   11.299|
+B<23>           |Result<25>     |   11.745|
+B<23>           |Result<26>     |   11.360|
+B<23>           |Result<27>     |   11.632|
+B<23>           |Result<28>     |   11.691|
+B<23>           |Result<29>     |   11.799|
+B<23>           |Result<30>     |   11.300|
+B<23>           |Result<31>     |   11.939|
+B<23>           |Zero           |   12.999|
+B<24>           |Result<24>     |   10.364|
+B<24>           |Result<25>     |   11.644|
+B<24>           |Result<26>     |   11.383|
+B<24>           |Result<27>     |   11.643|
+B<24>           |Result<28>     |   11.750|
+B<24>           |Result<29>     |   11.858|
+B<24>           |Result<30>     |   11.359|
+B<24>           |Result<31>     |   11.998|
+B<24>           |Zero           |   13.010|
+B<25>           |Result<25>     |   10.918|
+B<25>           |Result<26>     |   11.661|
+B<25>           |Result<27>     |   11.923|
+B<25>           |Result<28>     |   11.992|
+B<25>           |Result<29>     |   12.100|
+B<25>           |Result<30>     |   11.601|
+B<25>           |Result<31>     |   12.240|
+B<25>           |Zero           |   13.290|
+B<26>           |Result<26>     |   10.095|
+B<26>           |Result<27>     |   10.716|
+B<26>           |Result<28>     |   10.806|
+B<26>           |Result<29>     |   10.914|
+B<26>           |Result<30>     |   10.415|
+B<26>           |Result<31>     |   11.054|
+B<26>           |Zero           |   12.083|
+B<27>           |Result<27>     |   10.509|
+B<27>           |Result<28>     |   11.008|
+B<27>           |Result<29>     |   11.116|
+B<27>           |Result<30>     |   10.617|
+B<27>           |Result<31>     |   11.256|
+B<27>           |Zero           |   12.016|
+B<28>           |Result<28>     |   10.855|
+B<28>           |Result<29>     |   11.570|
+B<28>           |Result<30>     |   11.195|
+B<28>           |Result<31>     |   11.822|
+B<28>           |Zero           |   12.594|
+B<29>           |Result<29>     |   10.486|
+B<29>           |Result<30>     |   10.748|
+B<29>           |Result<31>     |   11.377|
+B<29>           |Zero           |   12.147|
+B<30>           |Result<30>     |   10.353|
+B<30>           |Result<31>     |   11.812|
+B<30>           |Zero           |   12.489|
+B<31>           |Result<31>     |   10.329|
+B<31>           |Zero           |   11.006|
+----------------+---------------+---------+
+
+
+Analysis completed Thu Nov 27 20:52:53 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 168 MB
+
+
+

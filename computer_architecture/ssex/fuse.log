@@ -1,0 +1,81 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/yx654/Desktop/ssex/pipelinedcpu_tb_isim_beh.exe -prj C:/Users/yx654/Desktop/ssex/pipelinedcpu_tb_beh.prj work.pipelinedcpu_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/g_p.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/add.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/cla_2.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/cla_4.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/cla_8.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/cla_16.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/cla_32.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/mux2x32.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/cla32.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/shift.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/mux6x32.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/mul_signed.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/addsub32.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/regfile.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipeidcu.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/mux4x32.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/mux2x5.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/IP_ROM.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/dff32.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/alu.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipepc.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipemwreg.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipeir.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipeif.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipeid.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipeexe.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipeemreg.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipedereg.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/IP_RAM.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipelinedcpu.v" into library work
+Analyzing Verilog file "C:/Users/yx654/Desktop/ssex/pipelinedcpu_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/yx654/Desktop/ssex/pipeif.v" Line 31: Port co is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/yx654/Desktop/ssex/pipeid.v" Line 75: Port co is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/yx654/Desktop/ssex/pipeexe.v" Line 37: Port co is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/yx654/Desktop/ssex/addsub32.v" Line 26: Port co is not connected to this instance
+Completed static elaboration
+Compiling module dff32
+Compiling module pipepc
+Compiling module mux4x32
+Compiling module add
+Compiling module g_p
+Compiling module cla_2
+Compiling module cla_4
+Compiling module cla_8
+Compiling module cla_16
+Compiling module cla_32
+Compiling module cla32
+Compiling module IP_ROM
+Compiling module pipeif
+Compiling module pipeir
+Compiling module pipeidcu
+Compiling module regfile
+Compiling module mux2x5
+Compiling module pipeid
+Compiling module pipedereg
+Compiling module mux2x32
+Compiling module addsub32
+Compiling module mul_signed
+Compiling module shift
+Compiling module mux6x32
+Compiling module alu
+Compiling module pipeexe
+Compiling module pipeemreg
+Compiling module IP_RAM
+Compiling module pipemwreg
+Compiling module pipelinedcpu
+Compiling module pipelinedcpu_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 25 sub-compilation(s) to finish...
+Compiled 32 Verilog Units
+Built simulation executable C:/Users/yx654/Desktop/ssex/pipelinedcpu_tb_isim_beh.exe
+Fuse Memory Usage: 31700 KB
+Fuse CPU Usage: 687 ms

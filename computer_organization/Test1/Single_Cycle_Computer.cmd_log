@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Single_Cycle_Computer.xst" -ofn "D:/CPU_Test/Test1/Single_Cycle_Computer.syr" 
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Single_Cycle_Computer.xst" -ofn "D:/CPU_Test/Test1/Single_Cycle_Computer.syr" 
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Single_Cycle_Computer.xst" -ofn "D:/CPU_Test/Test1/Single_Cycle_Computer.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../IP_Test/ipcore_dir -nt timestamp -i -p xc6slx45-csg484-3 Single_Cycle_Computer.ngc Single_Cycle_Computer.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Single_Cycle_Computer_map.ncd Single_Cycle_Computer.ngd Single_Cycle_Computer.pcf 
+xst -intstyle ise -ifn "D:/CPU_Test/Test1/Single_Cycle_Computer.xst" -ofn "D:/CPU_Test/Test1/Single_Cycle_Computer.syr" 
